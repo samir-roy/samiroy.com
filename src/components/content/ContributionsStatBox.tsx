@@ -1,8 +1,10 @@
 import * as React from 'react';
 import StatisticBox from '@widgets/StatBox';
 
+const DEFAULT_CONTRIBS = '1,138'; // default to last updated
+
 const ContributionsStatBox = () => {
-  const [contribs, setContribs] = React.useState('1,138'); // default to last updated
+  const [contribs, setContribs] = React.useState(DEFAULT_CONTRIBS);
 
   React.useEffect(() => {
     (async () => {
@@ -12,6 +14,7 @@ const ContributionsStatBox = () => {
         setContribs(`${json.contribs}`);
       } catch (e) {
         console.error(e); // eslint-disable-line no-console
+        setContribs(DEFAULT_CONTRIBS);
       }
     })();
   }, []);
