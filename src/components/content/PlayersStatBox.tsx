@@ -21,7 +21,7 @@ const PlayersStatBox = () => {
   const caption = (
     <h3 style={{ fontWeight: 600, marginBottom: 0, marginTop: 8 }}>
       games&nbsp;played by&nbsp;{players}
-      &nbsp;players last month.
+      &nbsp;players last month
     </h3>
   );
 

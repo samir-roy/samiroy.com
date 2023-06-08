@@ -11,7 +11,7 @@ import WoohooHero from '@components/heroes/WoohooHero';
 import WoohooCaption from '@content/WoohooCaption';
 import StatusBlock from '@content/StatusBlock';
 import AlsoBuiltBlock from '@content/AlsoBuiltBlock';
-import KeepScrollingBlock from '@content/KeepScrollingBlock';
+import FounderStatBox from '@components/content/FounderStatBox';
 import PlayersStatBox from '@content/PlayersStatBox';
 import ContributionsStatBox from '@content/ContributionsStatBox';
 import Experience from '@content/Experience';
@@ -50,7 +50,7 @@ const IndexPage = () => (
     <WoohooCaption />
     <Margin height={96} />
 
-    <KeepScrollingBlock />
+    <FounderStatBox />
 
     <Margin height={96} />
     <Experience />
