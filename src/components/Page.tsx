@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import SEO from '@widgets/SEO';
 import Footer from '@widgets/Footer';
 
@@ -23,6 +24,7 @@ const Page = ({ title, children }: { title?: string; children: React.ReactNode }
       <SEO title={title} />
       {children}
       <Footer onBackToTop={() => topRef.current?.scrollIntoView({ behavior: 'smooth' })} />
+      <Analytics />
     </main>
   );
 };
