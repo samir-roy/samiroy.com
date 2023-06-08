@@ -27,23 +27,5 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-2VTV2HBKFD",
-        ],
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-          send_page_view: true,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: [],
-        },
-      },
-    },
   ],
 };
