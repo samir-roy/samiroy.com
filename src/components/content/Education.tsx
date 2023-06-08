@@ -4,7 +4,7 @@ import Margin from '@widgets/Margin';
 
 const Education = () => (
   <section>
-    <h2>Education</h2>
+    <h2>Samir&#39;s Education</h2>
     <p>
       While growing up in Delhi, wrote first program in
       {' '}<a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>{' '}
