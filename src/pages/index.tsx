@@ -2,7 +2,7 @@ import * as React from 'react';
 import Page from '@components/Page';
 import Margin from '@widgets/Margin';
 import SamiroyHero from '@components/heroes/SamiroyHero';
-import SamiroyCaption from '@content/SamiroyCaption';
+import AboutCaption from '@content/AboutCaption';
 import PoonjiHero from '@components/heroes/PoonjiHero';
 import PoonjiCaption from '@content/PoonjiCaption';
 import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <Margin height={96} />
     <SamiroyHero subtitle="Startup Engineering" thin />
     <Margin height={64} desktop={96} />
-    <SamiroyCaption />
+    <AboutCaption />
     <Margin height={96} />
 
     <StatusBlock />
