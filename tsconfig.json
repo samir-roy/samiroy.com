@@ -6,6 +6,7 @@
     "noImplicitThis": true,
     "module": "commonjs",
     "target": "esnext",
+    "skipLibCheck": true,
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"],
     "paths": {

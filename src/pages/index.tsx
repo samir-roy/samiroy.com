@@ -2,7 +2,7 @@ import * as React from 'react';
 import Page from '@components/Page';
 import Margin from '@widgets/Margin';
 import SamiroyHero from '@components/heroes/SamiroyHero';
-import SamiroyCaption from '@content/SamiroyCaption';
+import AboutCaption from '@content/AboutCaption';
 import PoonjiHero from '@components/heroes/PoonjiHero';
 import PoonjiCaption from '@content/PoonjiCaption';
 import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
@@ -11,7 +11,7 @@ import WoohooHero from '@components/heroes/WoohooHero';
 import WoohooCaption from '@content/WoohooCaption';
 import StatusBlock from '@content/StatusBlock';
 import AlsoBuiltBlock from '@content/AlsoBuiltBlock';
-import KeepScrollingBlock from '@content/KeepScrollingBlock';
+import FounderStatBox from '@components/content/FounderStatBox';
 import PlayersStatBox from '@content/PlayersStatBox';
 import ContributionsStatBox from '@content/ContributionsStatBox';
 import Experience from '@content/Experience';
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <Margin height={96} />
     <SamiroyHero subtitle="Startup Engineering" thin />
     <Margin height={64} desktop={96} />
-    <SamiroyCaption />
+    <AboutCaption />
     <Margin height={96} />
 
     <StatusBlock />
@@ -50,7 +50,7 @@ const IndexPage = () => (
     <WoohooCaption />
     <Margin height={96} />
 
-    <KeepScrollingBlock />
+    <FounderStatBox />
 
     <Margin height={96} />
     <Experience />
