@@ -26,7 +26,6 @@ const Footer = ({ onBackToTop }: Props) => (
   <div style={styles.footer} className="flex-reverse">
     <div className="col-md-6 center-md-left">
       <SamiroyLogo style={styles.logo} />
-      <br />
       &copy; Samiroy LLC. All Rights Reserved.
     </div>
     <div className="col-md-6 center-md-right" style={{ marginTop: 'auto' }}>

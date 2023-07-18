@@ -19,13 +19,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #1F2126;
+    --background-color: #1f2126;
     --text-color: #efefef;
     --light-text-color: #aaaaaa;
     --light-bg-color: #000000;
     --primary-text-color: #6491d4;
-    --primary-glitch-color: rgb(50, 74, 116);
-    --secondary-glitch-color: rgb(111, 55, 72);
+    --primary-glitch-color: #324a74;
+    --secondary-glitch-color: #6f3748;
     --poonji-pip-stroke-color: #ffffff;
     --poonji-stroke-color: #ffffff;
   }
