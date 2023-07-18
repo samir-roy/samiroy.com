@@ -1,10 +1,9 @@
 import * as React from 'react';
 
-type Theme = 'light' | 'dark';
-const convert = (matches: boolean) => (matches ? 'dark' : 'light') as Theme;
+const convert = (matches: boolean) => (matches ? 'dark' : 'light') as 'light' | 'dark';
 
 const useColorScheme = () => {
-  const [theme, setTheme] = React.useState<Theme>('light');
+  const [theme, setTheme] = React.useState(convert(false));
 
   React.useEffect(() => {
     const query = window.matchMedia('(prefers-color-scheme: dark)');
