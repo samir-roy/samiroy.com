@@ -10,9 +10,9 @@ const styles = {
     marginTop: 64,
   } as React.CSSProperties,
   logo: {
-    height: 48,
+    height: 38,
     width: 48,
-    marginBottom: 4,
+    marginBottom: 8,
     marginTop: 8,
     display: 'inline-block',
   } as React.CSSProperties,
