@@ -12,7 +12,7 @@ type Props = {
 const SamiroyHero = ({ subtitle = '', thin = false }: Props) => (
   <div className="flex-reverse">
     <div className="col-md-6 center">
-      <div style={{ marginBottom: 16 }}>
+      <div style={{ marginBottom: 16, display: 'inline-flex' }}>
         <SamiroyTitle />
       </div>
       <h1 style={thin ? { fontWeight: 300, margin: 0 } : { margin: 0 }}>
