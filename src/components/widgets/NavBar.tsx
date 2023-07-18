@@ -16,7 +16,7 @@ const NavBar = ({ subtitle }: Props) => (
       </Link>
     </div>
     {subtitle && (<div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>)}
-    <div style={{ textAlign: 'right', flexGrow: 1, lineHeight: 0 }}>
+    <div style={{ marginLeft: 'auto', lineHeight: 0 }}>
       <SamiroyLogo style={{ height: 48, width: 48 }} />
     </div>
   </div>
