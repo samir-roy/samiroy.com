@@ -11,9 +11,10 @@ const styles = {
   } as React.CSSProperties,
   logo: {
     height: 38,
-    width: 48,
+    width: 33,
     marginBottom: 8,
     marginTop: 8,
+    marginLeft: 2,
     display: 'inline-block',
   } as React.CSSProperties,
 };

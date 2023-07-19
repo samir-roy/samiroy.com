@@ -22,9 +22,13 @@ const SamiroyAnimatedLogo = () => {
     } as React.CSSProperties,
     logo: {
       display: 'inline-block',
-      top: -150,
+      top: -160,
       position: 'relative',
     } as React.CSSProperties,
+    sprite: {
+      height: 168,
+      width: 145,
+    },
   };
 
   return (
@@ -34,7 +38,7 @@ const SamiroyAnimatedLogo = () => {
           <PongAnimation />
         </div>
         <div style={styles.logo}>
-          <SamiroyLogo />
+          <SamiroyLogo style={styles.sprite} />
         </div>
       </div>
     </div>
