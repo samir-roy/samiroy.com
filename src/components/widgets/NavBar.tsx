@@ -9,15 +9,15 @@ type Props = {
 }
 
 const NavBar = ({ subtitle }: Props) => (
-  <div className="boxed" style={{ display: 'flex', padding: '4px 12px' }}>
-    <div style={{ marginTop: 10 }}>
+  <div className="boxed" style={{ display: 'flex', padding: '4px 12px', alignItems: 'center' }}>
+    <div style={{ marginTop: 4, marginBottom: 4, display: 'inline-block' }}>
       <Link to="/" className="no-hover">
         <SamiroyTitle style={{ width: 127.5, height: 26.5 }} />
       </Link>
     </div>
     {subtitle && (<div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>)}
-    <div style={{ marginLeft: 'auto', lineHeight: 0 }}>
-      <SamiroyLogo style={{ height: 48, width: 48 }} />
+    <div style={{ marginLeft: 'auto' }}>
+      <SamiroyLogo style={{ height: 32, width: 28 }} />
     </div>
   </div>
 );
