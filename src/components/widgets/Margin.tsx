@@ -3,14 +3,17 @@ import * as React from 'react';
 type Props = {
   /** height of margin space to add */
   height?: number;
-  /** different height to set for desktop, optional */
+  /** additional height to set for desktop, optional */
   desktop?: number;
+  /** additional height to set for mobile, optional */
+  mobile?: number;
 }
 
-const Margin = ({ height = 16, desktop }: Props = {}) => (
+const Margin = ({ height = 16, desktop, mobile }: Props = {}) => (
   <>
     <div style={{ marginTop: height }} />
     {desktop !== undefined && <div style={{ marginTop: desktop }} className="desktop" />}
+    {mobile !== undefined && <div style={{ marginTop: mobile }} className="mobile" />}
   </>
 );
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const AboutCaption = () => (
-  <p style={{ fontSize: '1.6em', textAlign: 'justify', fontWeight: 200 }}>
+  <p className="font-lg font-light justify">
     Samiroy is a cutting-edge consulting firm specializing in engineering leadership
     and principal engineering services for early stage companies. As a product incubator,
     we also develop and launch consumer-oriented innovations that captivate the market,
