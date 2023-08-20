@@ -15,10 +15,10 @@ const OpenSourceBlock = () => (
     </p>
     <Margin height={32} />
     <div className="boxed center flex">
-      <div className="center" style={{ minWidth: 250 }}>
+      <div className="center m-w-lg">
         <ToolsIcon />
       </div>
-      <div className="mobile" style={{ height: 16 }} />
+      <Margin height={0} mobile={16} />
       <div className="center" style={{ display: 'table', flexGrow: 1 }}>
         <h3 style={{ display: 'table-cell', verticalAlign: 'middle' }}>
           Find&nbsp;this website and other

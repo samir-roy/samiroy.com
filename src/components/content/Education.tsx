@@ -24,8 +24,8 @@ const Education = () => (
           <a href="/samir-roy-stylespheres.pdf" target="_blank" rel="noreferrer">Style Spheres</a>
         </h3>
       </div>
-      <div className="mobile" style={{ height: 16 }} />
-      <div className="center" style={{ minWidth: 250 }}>
+      <Margin height={0} mobile={16} />
+      <div className="center min-w-lg">
         <GraduationIcon />
       </div>
     </div>

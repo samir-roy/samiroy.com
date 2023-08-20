@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 const AlsoBuiltBlock = () => (
   <div className="boxed">
-    <h3 style={{ fontWeight: 600, margin: 0, textAlign: 'center' }}>
+    <h3 className="font-heavy center m-zero">
       Also built Endless Traffic. Learn&nbsp;more&nbsp;at&nbsp;
       <Link to="/games">/games</Link>.
     </h3>

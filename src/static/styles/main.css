@@ -43,11 +43,13 @@
 .desktop {
   display: none;
 }
+
 .col-md-5, .col-md-6, .col-md-7 {
   position: relative;
   min-height: 1px;
   width: 100%;
 }
+
 .flex-reverse {
   display: flex;
   flex-direction: column-reverse;
@@ -60,6 +62,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .center-md-left, .center-md-right {
   text-align: center;
 }
@@ -160,6 +163,10 @@ li {
   text-align: center;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .together {
   display: inline-block;
 }
@@ -173,6 +180,12 @@ li {
   color: var(--light-text-color);
   padding: 32px;
   border-radius: 8px;
+}
+
+.caption {
+  font-size: 1.6em;
+  text-align: justify;
+  font-weight: 200;
 }
 
 .button {
@@ -220,4 +233,68 @@ li {
 .carousel > img {
   padding: 4px;
   border-radius: 12px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-zero {
+  margin: 0px;
+}
+
+.m-b-md {
+  margin-bottom: 16px;
+}
+.m-b-lg {
+  margin-bottom: 32px;
+}
+.m-b-xl {
+  margin-bottom: 48px;
+}
+
+.m-t-md {
+  margin-top: 16px;
+}
+.m-t-lg {
+  margin-top: 32px;
+}
+.m-t-xl {
+  margin-top: 48px;
+}
+
+.m-caption {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.font-lg {
+  font-size: 1.6em;
+}
+
+.font-normal {
+  font-weight: 300;
+}
+.font-light {
+  font-weight: 200;
+}
+.font-bold {
+  font-weight: 500;
+}
+.font-heavy {
+  font-weight: 600;
+}
+
+.w-sm {
+  width: 150px;
+}
+.min-w-sm {
+  min-width: 150px;
+}
+.min-w-lg {
+  min-width: 250px;
+}
+
+.h-button {
+  height: 50px;
 }

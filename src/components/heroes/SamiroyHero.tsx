@@ -1,6 +1,7 @@
 import * as React from 'react';
 import SamiroyTitle from '@sprites/SamiroyTitle';
 import SamiroyAnimatedLogo from '@components/animations/SamiroyAnimatedLogo';
+import Margin from '@widgets/Margin';
 
 type Props = {
   /** subtitle to show below the samiroy title */
@@ -21,7 +22,7 @@ const SamiroyHero = ({ subtitle = '', thin = false }: Props) => (
     </div>
     <div className="col-md-6 center">
       <SamiroyAnimatedLogo />
-      <div className="mobile" style={{ height: 80 }} />
+      <Margin height={0} mobile={80} />
     </div>
   </div>
 );

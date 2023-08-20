@@ -4,25 +4,16 @@ import Margin from '@widgets/Margin';
 import NavBar from '@widgets/NavBar';
 import WoohooHero from '@components/heroes/WoohooHero';
 
-const styles = {
-  body: {
-    fontSize: '1.6em',
-    textAlign: 'justify',
-    fontWeight: 200,
-    marginBottom: 32,
-  } as React.CSSProperties,
-};
-
 const WoohooPage = () => (
   <Page title="WooHoo">
     <NavBar />
     <Margin height={64} />
     <WoohooHero />
     <Margin height={64} />
-    <p style={styles.body}>
+    <p className="caption m-b-lg">
       WooHoo was a live fantasy sports experience created to play along with the ICC Cricket World Cup in 2015.
     </p>
-    <div className="center carousel" style={{ marginBottom: 48 }}>
+    <div className="center carousel m-b-xl">
       <img alt="screenshot" width="240" height="426" src="/woohoo01.webp" />
       <img alt="screenshot" width="240" height="426" src="/woohoo02.webp" />
       <img alt="screenshot" width="240" height="426" src="/woohoo03.webp" />
@@ -34,7 +25,7 @@ const WoohooPage = () => (
       prizes. Players were also able to chat with their friends while playing the game and see their rankings on
       live leaderboards.
     </p>
-    <div className="center carousel" style={{ marginTop: 48, marginBottom: 48 }}>
+    <div className="center carousel m-b-xl m-t-xl">
       <img alt="screenshot" width="240" height="426" src="/woohoo04.webp" />
       <img alt="screenshot" width="240" height="426" src="/woohoo05.webp" />
       <img alt="screenshot" width="240" height="426" src="/woohoo06.webp" />
