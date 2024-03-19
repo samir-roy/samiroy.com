@@ -3,28 +3,28 @@ import PongAnimation from '@components/animations/PongAnimation';
 import SamiroyLogo from '@sprites/SamiroyLogo';
 
 const SamiroyAnimatedLogo = () => {
-  const styles = {
+  const styles: Record<string, React.CSSProperties> = {
     wrapper: {
       overflow: 'clip',
       height: 150,
-    } as React.CSSProperties,
+    },
     container: {
       display: 'inline-block',
       margin: 'auto',
       width: 'calc(100%)',
       height: 150,
       maxWidth: 360,
-    } as React.CSSProperties,
+    },
     animation: {
       position: 'absolute',
       width: 'calc(100%)',
       display: 'contents',
-    } as React.CSSProperties,
+    },
     logo: {
       display: 'inline-block',
       top: -160,
       position: 'relative',
-    } as React.CSSProperties,
+    },
     sprite: {
       height: 168,
       width: 145,

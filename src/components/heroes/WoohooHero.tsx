@@ -14,9 +14,7 @@ const WoohooHero = () => (
         <img src={svgWoohooTitle} height="100%" width="100%" alt="Woohoo" />
       </div>
       <h2>
-        <div style={{ marginBottom: 4, marginLeft: 4, fontWeight: 300 }}>
-          Live&nbsp;Fantasy Sports&nbsp;Game
-        </div>
+        <div style={{ marginBottom: 4, marginLeft: 4, fontWeight: 300 }}>Live&nbsp;Fantasy Sports&nbsp;Game</div>
       </h2>
     </div>
   </div>

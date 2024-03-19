@@ -6,12 +6,11 @@ const Education = () => (
   <section>
     <h2>Samir&#39;s Education</h2>
     <p>
-      While growing up in Delhi, wrote first program in
-      {' '}<a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>{' '}
-      to control a turtle to draw a house, and was forever hooked!
-      Won national coding competitions throughout high school and beat out participants
-      from higher grades to represent India in international contests. Went on to graduate
-      from the University of Virginia with a degree in Computer Science.
+      While growing up in Delhi, wrote first program in{' '}
+      <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a> to control a turtle to draw a house,
+      and was forever hooked! Won national coding competitions throughout high school and beat out participants from
+      higher grades to represent India in international contests. Went on to graduate from the University of Virginia
+      with a degree in Computer Science.
     </p>
     <Margin height={32} />
     <div className="boxed center flex-reverse">
@@ -21,7 +20,9 @@ const Education = () => (
           <br />
           non&#8209;photorealistic rendering:
           <br />
-          <a href="/samir-roy-stylespheres.pdf" target="_blank" rel="noreferrer">Style Spheres</a>
+          <a href="/samir-roy-stylespheres.pdf" target="_blank" rel="noreferrer">
+            Style Spheres
+          </a>
         </h3>
       </div>
       <Margin height={0} mobile={16} />

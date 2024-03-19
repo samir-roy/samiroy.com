@@ -2,8 +2,7 @@ import * as React from 'react';
 
 const Item = ({ title, subtitle }: { title: string; subtitle: string }) => (
   <li>
-    {title}{' '}
-    <br className="mobile" />
+    {title} <br className="mobile" />
     <span className="light-text">{subtitle}</span>
   </li>
 );
@@ -12,10 +11,9 @@ const Experience = () => (
   <section>
     <h2>Founded by Samir Roy</h2>
     <p>
-      Samir has been a senior engineering leader at several early-stage technology companies
-      and has worked on product and engineering at startups through various stages of growth,
-      with multiple successful exits. He has helped founders navigate through various
-      accelerators and funding programs, including Shark Tank and YCombinator.
+      Samir has been a senior engineering leader at several early-stage technology companies and has worked on product
+      and engineering at startups through various stages of growth, with multiple successful exits. He has helped
+      founders navigate through various accelerators and funding programs, including Shark Tank and YCombinator.
     </p>
     <ul>
       <Item title="Consulting Engineer @ Benepass" subtitle="(YCombinator W20)" />

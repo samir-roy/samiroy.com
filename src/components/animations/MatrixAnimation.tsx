@@ -6,7 +6,7 @@ type Props = {
   running?: boolean;
   /** reverse the order of columns */
   reverse?: boolean;
-}
+};
 
 const matrix = [
   [0, 0, 1, 1, 0, 1, 0, 1],
@@ -19,7 +19,7 @@ const matrix = [
   [0, 1, 0, 1, 1, 1, 0, 0],
 ] as const;
 
-// fake random column selection
+// fake but cheap random column selection
 const distribution = [0, 5, 2, 1, 3, 7, 4, 6, 0, 2, 5, 1, 7, 3, 6, 4];
 
 const useDropEffect = (initialPosition = 0) => {
@@ -63,25 +63,21 @@ const MatrixAnimation = ({ running = true, reverse = false }: Props = {}) => {
 
   return (
     <>
-      {
-        matrix.map((matrixRow, i) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <div key={`${i}`} style={{ flexDirection: reverse ? 'row-reverse' : 'row', display: 'flex' }}>
-            {
-              matrixRow.map((digit, j) => (
-                <FadingDigitAnimation
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={`${i}${j}`}
-                  digit={digit}
-                  reset={(i === row1 && j === col1) || (i === row2 && j === col2)}
-                />
-              ))
-            }
-          </div>
-        ))
-      }
+      {matrix.map((matrixRow, i) => (
+        <div key={keyHack(i)} style={{ flexDirection: reverse ? 'row-reverse' : 'row', display: 'flex' }}>
+          {matrixRow.map((digit, j) => (
+            <FadingDigitAnimation
+              key={keyHack(i, j)}
+              digit={digit}
+              reset={(i === row1 && j === col1) || (i === row2 && j === col2)}
+            />
+          ))}
+        </div>
+      ))}
     </>
   );
 };
+
+const keyHack = (i: number, j?: number) => `${i}${j ?? 'r'}`;
 
 export default React.memo(MatrixAnimation);

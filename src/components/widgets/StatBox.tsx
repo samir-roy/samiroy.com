@@ -6,17 +6,17 @@ type Props = {
   value: string;
   /** the caption to display below value */
   caption?: React.ReactChild | string;
-}
+};
 
 const StatBox = ({ value, caption }: Props) => {
-  const odoStyle = (glitch = 0, zIndex = 1) => ({
+  const odoStyle = (glitch = 0, zIndex = 1): React.CSSProperties => ({
     position: 'absolute',
     zIndex,
     left: '50%',
     width: 250,
     transform: `translate(calc(-50% ${glitch < 0 ? '-' : '+'} ${Math.abs(glitch)}px), 0px)`,
     WebkitTransform: `translate(calc(-50% ${glitch < 0 ? '-' : '+'} ${Math.abs(glitch)}px), 0px)`,
-  } as React.CSSProperties);
+  });
 
   return (
     <div className="boxed center">
@@ -31,7 +31,7 @@ const StatBox = ({ value, caption }: Props) => {
           <Odometer value={value} color="var(--text-color)" />
         </div>
       </div>
-      { caption }
+      {caption}
     </div>
   );
 };

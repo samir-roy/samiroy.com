@@ -29,8 +29,8 @@ const ContributionsStatBox = () => {
 
   const caption = (
     <h3 className="font-heavy m-caption">
-      contributions on&nbsp;<a href="https://github.com/samir-roy">GitHub</a>,
-      {' '}<span className="together">in {period}</span>
+      contributions on&nbsp;<a href="https://github.com/samir-roy">GitHub</a>,{' '}
+      <span className="together">in {period}</span>
     </h3>
   );
 

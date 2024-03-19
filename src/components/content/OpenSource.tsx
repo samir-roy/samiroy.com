@@ -6,16 +6,15 @@ const OpenSourceBlock = () => (
   <section>
     <h2>Open Source</h2>
     <p>
-      This website is open source. You can find the source code at
-      {' '}<a href="https://github.com/samir-roy/samirroy.com">https://github.com/samir-roy/samirroy.com</a>.
-      It is built using awesome open source technologies including
-      {' '}<a href="https://www.typescriptlang.org">Typescript</a>,
-      {' '}<a href="https://reactjs.org">React</a>, & <a href="https://www.gatsbyjs.com">Gatsby</a>,
-      and is hosted on <a href="https://vercel.com">Vercel</a>.
+      This website is open source. You can find the source code at{' '}
+      <a href="https://github.com/samir-roy/samirroy.com">https://github.com/samir-roy/samirroy.com</a>. It is built
+      using awesome open source technologies including <a href="https://www.typescriptlang.org">Typescript</a>,{' '}
+      <a href="https://reactjs.org">React</a>, & <a href="https://www.gatsbyjs.com">Gatsby</a>, and is hosted on{' '}
+      <a href="https://vercel.com">Vercel</a>.
     </p>
     <Margin height={32} />
     <div className="boxed center flex">
-      <div className="center m-w-lg">
+      <div className="center min-w-lg">
         <ToolsIcon />
       </div>
       <Margin height={0} mobile={16} />

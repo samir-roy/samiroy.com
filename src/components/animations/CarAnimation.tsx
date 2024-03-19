@@ -9,18 +9,24 @@ const size = {
 } as React.CSSProperties;
 
 const CarAnimation = ({ style = {} }: { style?: React.CSSProperties } = {}) => {
-  const layerStyle = (zIndex: number) => ({
+  const layerStyle = (zIndex: number): React.CSSProperties => ({
     ...size,
     zIndex,
     position: 'absolute',
     display: 'content',
-  } as React.CSSProperties);
+  });
 
   return (
     <div style={{ ...size, ...style }}>
-      <div style={layerStyle(1)}><CarShadow /></div>
-      <div className="bounce" style={{ ...layerStyle(2) }}><CarChasis /></div>
-      <div style={layerStyle(3)}><CarTyres /></div>
+      <div style={layerStyle(1)}>
+        <CarShadow />
+      </div>
+      <div className="bounce" style={{ ...layerStyle(2) }}>
+        <CarChasis />
+      </div>
+      <div style={layerStyle(3)}>
+        <CarTyres />
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import SEO from '@widgets/SEO';
 import Footer from '@widgets/Footer';
 
-const styles = {
+const styles: Record<string, React.CSSProperties> = {
   page: {
     padding: 16,
     width: '100%',
@@ -12,7 +12,7 @@ const styles = {
     marginRight: 'auto',
     display: 'block',
     maxWidth: 880,
-  } as React.CSSProperties,
+  },
 };
 
 const Page = ({ title, children }: { title?: string; children: React.ReactNode }) => {

@@ -6,7 +6,7 @@ import SamiroyLogo from '@sprites/SamiroyLogo';
 type Props = {
   /** subtitle to show below the samiroy title */
   subtitle?: string;
-}
+};
 
 const NavBar = ({ subtitle }: Props) => (
   <div className="boxed" style={{ display: 'flex', padding: '4px 12px', alignItems: 'center' }}>
@@ -15,7 +15,7 @@ const NavBar = ({ subtitle }: Props) => (
         <SamiroyTitle style={{ width: 127.5, height: 26.5 }} />
       </Link>
     </div>
-    {subtitle && (<div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>)}
+    {subtitle && <div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>}
     <div style={{ marginLeft: 'auto' }}>
       <SamiroyLogo style={{ height: 32, width: 28 }} />
     </div>

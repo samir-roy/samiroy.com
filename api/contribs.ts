@@ -6,7 +6,7 @@ import type { GatsbyFunctionRequest, GatsbyFunctionResponse } from 'gatsby';
  * Queries GitHub to retrieve the total contributions made by user samir-roy in the last year
  * using a private github token with read:user permissions.
  */
-export default async function handler(req: GatsbyFunctionRequest, res: GatsbyFunctionResponse) {
+export default async function handler(_req: GatsbyFunctionRequest, res: GatsbyFunctionResponse) {
   const token = process.env.GITHUB_TOKEN;
   const headers = {
     Authorization: `bearer ${token}`,

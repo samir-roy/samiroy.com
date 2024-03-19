@@ -18,9 +18,7 @@ const PoonjiHero = () => {
           <PoonjiTitle className="m-auto" />
         </h1>
         <h2>
-          <div className="font-normal">
-            No&#8209;code Algorithmic Trading&nbsp;Bots
-          </div>
+          <div className="font-normal">No&#8209;code Algorithmic Trading&nbsp;Bots</div>
         </h2>
       </div>
     </div>

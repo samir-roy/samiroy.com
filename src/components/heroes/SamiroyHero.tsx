@@ -8,7 +8,7 @@ type Props = {
   subtitle?: string;
   /** if the subtitle should use 300 font weight */
   thin?: boolean;
-}
+};
 
 const SamiroyHero = ({ subtitle = '', thin = false }: Props) => (
   <div className="flex-reverse">
@@ -16,9 +16,7 @@ const SamiroyHero = ({ subtitle = '', thin = false }: Props) => (
       <div style={{ marginBottom: 16, display: 'inline-flex' }}>
         <SamiroyTitle />
       </div>
-      <h1 style={thin ? { fontWeight: 300, margin: 0 } : { margin: 0 }}>
-        {subtitle}
-      </h1>
+      <h1 style={thin ? { fontWeight: 300, margin: 0 } : { margin: 0 }}>{subtitle}</h1>
     </div>
     <div className="col-md-6 center">
       <SamiroyAnimatedLogo />
