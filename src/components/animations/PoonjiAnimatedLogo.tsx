@@ -5,28 +5,28 @@ import PoonjiLogo from '@sprites/poonji/PoonjiLogo';
 type Props = {
   /** whether the animation is running */
   running?: boolean;
-}
+};
 
 const PoonjiAnimatedLogo = ({ running = true }: Props = {}) => {
-  const styles = {
+  const styles: Record<string, React.CSSProperties> = {
     wrapper: {
       width: '100%',
-    } as React.CSSProperties,
+    },
     animations: {
       display: 'flex',
       width: '100%',
       maxWidth: 360,
       margin: 'auto',
-    } as React.CSSProperties,
+    },
     matrixLeft: {
       float: 'left',
       marginTop: 6,
-    } as React.CSSProperties,
+    },
     matrixRight: {
       float: 'right',
       marginTop: 6,
       flexGrow: 1,
-    } as React.CSSProperties,
+    },
   };
 
   return (
@@ -39,7 +39,9 @@ const PoonjiAnimatedLogo = ({ running = true }: Props = {}) => {
           <MatrixAnimation running={running} reverse />
         </div>
       </div>
-      <div style={{ marginTop: -160 }}><PoonjiLogo style={{ marginLeft: 'auto', marginRight: 'auto' }} /></div>
+      <div style={{ marginTop: -160 }}>
+        <PoonjiLogo style={{ marginLeft: 'auto', marginRight: 'auto' }} />
+      </div>
     </div>
   );
 };

@@ -8,16 +8,16 @@ type Props = {
   value: string;
   /** the color to render the digits in */
   color?: string;
-}
+};
 
-const Gap = () => (<svg width="8" height="54" viewBox="0 0 8 54" fill="none" xmlns="http://www.w3.org/2000/svg" />);
+const Gap = () => <svg width="8" height="54" viewBox="0 0 8 54" fill="none" xmlns="http://www.w3.org/2000/svg" />;
 
 const Odometer = ({ value, color }: Props) => (
   <div>
     {[...value].map((char, i) => (
       <React.Fragment key={`f${i}`}>
         <Digit key={`d${i}`} d={char} color={color} />
-        { i < value.length - 1 && <Gap key={`g${i}`} /> }
+        {i < value.length - 1 && <Gap key={`g${i}`} />}
       </React.Fragment>
     ))}
   </div>

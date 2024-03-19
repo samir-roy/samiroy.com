@@ -7,7 +7,7 @@ type Props = {
   desktop?: number;
   /** additional height to set for mobile, optional */
   mobile?: number;
-}
+};
 
 const Margin = ({ height = 16, desktop, mobile }: Props = {}) => (
   <>

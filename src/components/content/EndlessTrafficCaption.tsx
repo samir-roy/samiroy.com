@@ -3,8 +3,9 @@ import AppStoreButton from '@sprites/AppStoreButton';
 
 export const EndlessTrafficAppStoreButton = () => (
   <div className="w-sm m-auto">
-    {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-    <a href="https://itunes.apple.com/app/id1226961549" className="no-hover w-sm"><AppStoreButton /></a>
+    <a href="https://itunes.apple.com/app/id1226961549" className="no-hover w-sm" aria-label="link to app store">
+      <AppStoreButton />
+    </a>
   </div>
 );
 

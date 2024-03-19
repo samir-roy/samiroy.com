@@ -2,13 +2,13 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import SamiroyLogo from '@sprites/SamiroyLogo';
 
-const styles = {
+const styles: Record<string, React.CSSProperties> = {
   footer: {
     color: 'var(--light-text-color)',
     fontWeight: 500,
     fontSize: 12,
     marginTop: 64,
-  } as React.CSSProperties,
+  },
   logo: {
     height: 38,
     width: 33,
@@ -16,13 +16,13 @@ const styles = {
     marginTop: 8,
     marginLeft: 2,
     display: 'inline-block',
-  } as React.CSSProperties,
+  },
 };
 
 type Props = {
   /** Callback when back to top is clicked */
   onBackToTop: () => unknown;
-}
+};
 
 const Footer = ({ onBackToTop }: Props) => (
   <div style={styles.footer} className="flex-reverse">
@@ -32,14 +32,30 @@ const Footer = ({ onBackToTop }: Props) => (
       &copy; Samiroy LLC. All Rights Reserved.
     </div>
     <div className="col-md-6 center-md-right" style={{ marginTop: 'auto' }}>
-      <Link to="/" style={{ textDecoration: 'none' }}>Home</Link> |{' '}
-      <Link to="/about" style={{ textDecoration: 'none' }}>About</Link> |{' '}
-      <Link to="/privacy" style={{ textDecoration: 'none' }}>Privacy</Link> |{' '}
-      <Link to="/endlesstraffic" style={{ textDecoration: 'none' }}>Endless Traffic</Link> |{' '}
-      <a href="https://www.poonji.io" style={{ textDecoration: 'none' }}>Poonji</a>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        Home
+      </Link>{' '}
+      |{' '}
+      <Link to="/about" style={{ textDecoration: 'none' }}>
+        About
+      </Link>{' '}
+      |{' '}
+      <Link to="/privacy" style={{ textDecoration: 'none' }}>
+        Privacy
+      </Link>{' '}
+      |{' '}
+      <Link to="/endlesstraffic" style={{ textDecoration: 'none' }}>
+        Endless Traffic
+      </Link>{' '}
+      |{' '}
+      <a href="https://www.poonji.io" style={{ textDecoration: 'none' }}>
+        Poonji
+      </a>
       <br />
       <br />
-      <button className="link" type="button" onClick={() => onBackToTop()}>back to top</button>
+      <button className="link" type="button" onClick={() => onBackToTop()}>
+        back to top
+      </button>
     </div>
   </div>
 );

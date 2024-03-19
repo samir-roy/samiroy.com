@@ -10,9 +10,7 @@ const EndlessTrafficHero = () => (
         <EndlessTrafficTitle />
       </div>
       <h2>
-        <div style={{ marginBottom: 4, marginLeft: 4, fontWeight: 300 }}>
-          Arcade&nbsp;Game for&nbsp;iPhone
-        </div>
+        <div style={{ marginBottom: 4, marginLeft: 4, fontWeight: 300 }}>Arcade&nbsp;Game for&nbsp;iPhone</div>
       </h2>
     </div>
     <div className="col-md-6 center">

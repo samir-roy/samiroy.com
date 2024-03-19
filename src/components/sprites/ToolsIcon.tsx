@@ -8,11 +8,7 @@ const defaultStyle = {
 } as React.CSSProperties;
 
 const ToolsIcon = ({ style = {} }: { style?: React.CSSProperties } = {}) => (
-  <img
-    alt="Tools Icon"
-    src={svgTools}
-    style={{ ...defaultStyle, ...style }}
-  />
+  <img alt="Tools Icon" src={svgTools} style={{ ...defaultStyle, ...style }} />
 );
 
 export default React.memo(ToolsIcon);
