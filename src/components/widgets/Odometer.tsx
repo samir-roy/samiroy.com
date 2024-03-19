@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Digit from '@sprites/Digit';
 
-/* eslint-disable react/no-array-index-key */
-
 type Props = {
   /** The value to display as a string - renders numbers and commas; other characters ignored */
   value: string;
@@ -15,12 +13,14 @@ const Gap = () => <svg width="8" height="54" viewBox="0 0 8 54" fill="none" xmln
 const Odometer = ({ value, color }: Props) => (
   <div>
     {[...value].map((char, i) => (
-      <React.Fragment key={`f${i}`}>
-        <Digit key={`d${i}`} d={char} color={color} />
-        {i < value.length - 1 && <Gap key={`g${i}`} />}
+      <React.Fragment key={getKey(i, 'f')}>
+        <Digit key={getKey(i, 'd')} d={char} color={color} />
+        {i < value.length - 1 && <Gap key={getKey(i, 'g')} />}
       </React.Fragment>
     ))}
   </div>
 );
+
+const getKey = (i: number, p: string) => `${p}${i}`;
 
 export default React.memo(Odometer);

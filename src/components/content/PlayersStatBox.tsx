@@ -13,7 +13,7 @@ const PlayersStatBox = () => {
         setPlayers(`${json.players}`);
         setGames(`${json.games}`);
       } catch (e) {
-        console.error(e); // eslint-disable-line no-console
+        // log.error(e);
       }
     })();
   }, []);

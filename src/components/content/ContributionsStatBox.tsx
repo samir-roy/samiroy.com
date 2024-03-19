@@ -21,7 +21,7 @@ const ContributionsStatBox = () => {
           setPeriod('the past year');
         }
       } catch (e) {
-        console.error(e); // eslint-disable-line no-console
+        // log.error(e);
         setContribs(DEFAULT_CONTRIBS);
       }
     })();
