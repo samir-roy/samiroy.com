@@ -16,7 +16,7 @@ export default async function handler(_req: GatsbyFunctionRequest, res: GatsbyFu
   const body = {
     query: `query {
       user(login: "samir-roy") {
-        contributionsCollection {
+        contributionsCollection(from: "2024-01-01T00:00:00Z", to: "2024-12-31T23:59:59Z") {
           contributionCalendar {
             totalContributions
           }
@@ -36,8 +36,11 @@ export default async function handler(_req: GatsbyFunctionRequest, res: GatsbyFu
     const json = await response.json();
     const { totalContributions } = json.data.user.contributionsCollection.contributionCalendar;
 
+    // add current year count from response to past year total
+    const contribs = totalContributions + 9342;
+
     res.setHeader('Cache-control', 'public, max-age=43200');
-    res.json({ contribs: totalContributions.toLocaleString() });
+    res.json({ contribs: contribs.toLocaleString() });
   } catch (e) {
     res.status(500);
     res.json({ error: e.message });

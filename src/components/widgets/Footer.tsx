@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import SamiroyLogo from '@sprites/SamiroyLogo';
+import { SamiroyLogo } from '@samiroy/sprites';
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
     color: 'var(--light-text-color)',
     fontWeight: 500,
     fontSize: 12,
-    marginTop: 64,
+    marginTop: 96,
   },
   logo: {
     height: 38,
@@ -25,38 +25,27 @@ type Props = {
 };
 
 const Footer = ({ onBackToTop }: Props) => (
-  <div style={styles.footer} className="flex-reverse">
-    <div className="col-md-6 center-md-left">
-      <SamiroyLogo style={styles.logo} />
-      <br />
-      &copy; Samiroy LLC. All Rights Reserved.
+  <div style={styles.footer} className="col">
+    <div className="center footer">
+      <Link to="/">Home</Link>
+      {' | '}
+      <Link to="/about">About</Link>
+      {' | '}
+      <Link to="/privacy">Privacy</Link>
+      {' | '}
+      <Link to="/endlesstraffic">Endless Traffic</Link>
+      {' | '}
+      <a href="https://www.poonji.io">Poonji</a>
     </div>
-    <div className="col-md-6 center-md-right" style={{ marginTop: 'auto' }}>
-      <Link to="/" style={{ textDecoration: 'none' }}>
-        Home
-      </Link>{' '}
-      |{' '}
-      <Link to="/about" style={{ textDecoration: 'none' }}>
-        About
-      </Link>{' '}
-      |{' '}
-      <Link to="/privacy" style={{ textDecoration: 'none' }}>
-        Privacy
-      </Link>{' '}
-      |{' '}
-      <Link to="/endlesstraffic" style={{ textDecoration: 'none' }}>
-        Endless Traffic
-      </Link>{' '}
-      |{' '}
-      <a href="https://www.poonji.io" style={{ textDecoration: 'none' }}>
-        Poonji
-      </a>
-      <br />
-      <br />
+    <div className="center m-t-sm">
       <button className="link" type="button" onClick={() => onBackToTop()}>
         back to top
       </button>
     </div>
+    <div className="center m-t-md">
+      <SamiroyLogo style={styles.logo} />
+    </div>
+    <div className="center">&copy; Samiroy LLC. All Rights Reserved.</div>
   </div>
 );
 

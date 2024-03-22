@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import SamiroyTitle from '@sprites/SamiroyTitle';
-import SamiroyLogo from '@sprites/SamiroyLogo';
+import { SamiroyTitle, SamiroyLogo } from '@samiroy/sprites';
 
 type Props = {
   /** subtitle to show below the samiroy title */
@@ -17,7 +16,9 @@ const NavBar = ({ subtitle }: Props) => (
     </div>
     {subtitle && <div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>}
     <div style={{ marginLeft: 'auto' }}>
-      <SamiroyLogo style={{ height: 32, width: 28 }} />
+      <Link to="/" className="no-hover">
+        <SamiroyLogo style={{ height: 32, width: 28 }} />
+      </Link>
     </div>
   </div>
 );

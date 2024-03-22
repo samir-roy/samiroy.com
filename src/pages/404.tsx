@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <Margin height={96} />
     <SamiroyHero subtitle="404 - Page Not Found" />
     <Margin height={96} />
-    <h2>Sorry! We can&#39;t seem to find the page you were looking for.</h2>
+    <h3>Sorry! We can&#39;t seem to find the page you were looking for.</h3>
     <p>
       It may have expired, or there could be a typo. Maybe you can find what you were looking for from our homepage.
       <br />

@@ -2,8 +2,8 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Samiroy LLC - startup engineering',
-  title: (t = 'Startup Engineering') => `Samiroy - ${t}`,
+  description: 'Samiroy LLC',
+  title: (t = '') => `Samiroy${t ? ` - ${t}` : ''}`,
   url: 'https://samiroy.com',
   author: 'Samir Roy',
   keywords: ['samiroy', 'startup', 'product', 'engineer', 'software', 'quant'],

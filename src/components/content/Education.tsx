@@ -1,6 +1,6 @@
 import * as React from 'react';
-import GraduationIcon from '@sprites/GraduationIcon';
 import Margin from '@widgets/Margin';
+import svgGraduation from '@svg/graduation.svg';
 
 const Education = () => (
   <section>
@@ -13,9 +13,13 @@ const Education = () => (
       with a degree in Computer Science.
     </p>
     <Margin height={32} />
-    <div className="boxed center flex-reverse">
+    <div className="boxed center col">
+      <div className="center min-w-lg">
+        <img alt="Graduation Icon" src={svgGraduation} style={{ height: 64, width: 64 }} />
+      </div>
+      <Margin height={16} />
       <div className="center" style={{ display: 'table', flexGrow: 1 }}>
-        <h3 style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+        <h5 style={{ display: 'table-cell', verticalAlign: 'middle' }}>
           Undergraduate&nbsp;thesis on
           <br />
           non&#8209;photorealistic rendering:
@@ -23,11 +27,7 @@ const Education = () => (
           <a href="/samir-roy-stylespheres.pdf" target="_blank" rel="noreferrer">
             Style Spheres
           </a>
-        </h3>
-      </div>
-      <Margin height={0} mobile={16} />
-      <div className="center min-w-lg">
-        <GraduationIcon />
+        </h5>
       </div>
     </div>
   </section>

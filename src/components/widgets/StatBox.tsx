@@ -1,39 +1,21 @@
 import * as React from 'react';
-import Odometer from '@widgets/Odometer';
+import Glitchometer from '@samiroy/glitchometer';
 
 type Props = {
   /** the value to display */
   value: string;
   /** the caption to display below value */
-  caption?: React.ReactChild | string;
+  caption?: JSX.Element | string;
+  /** optional title to display above value */
+  title?: JSX.Element | string;
 };
 
-const StatBox = ({ value, caption }: Props) => {
-  const odoStyle = (glitch = 0, zIndex = 1): React.CSSProperties => ({
-    position: 'absolute',
-    zIndex,
-    left: '50%',
-    width: 250,
-    transform: `translate(calc(-50% ${glitch < 0 ? '-' : '+'} ${Math.abs(glitch)}px), 0px)`,
-    WebkitTransform: `translate(calc(-50% ${glitch < 0 ? '-' : '+'} ${Math.abs(glitch)}px), 0px)`,
-  });
-
-  return (
-    <div className="boxed center">
-      <div style={{ position: 'relative', height: 56, width: '100%' }}>
-        <div style={odoStyle(-3, 1)}>
-          <Odometer value={value} color="var(--primary-glitch-color)" />
-        </div>
-        <div style={odoStyle(3, 1)}>
-          <Odometer value={value} color="var(--secondary-glitch-color)" />
-        </div>
-        <div style={odoStyle(0, 2)}>
-          <Odometer value={value} color="var(--text-color)" />
-        </div>
-      </div>
-      {caption}
-    </div>
-  );
-};
+const StatBox = ({ value, caption, title }: Props) => (
+  <div className="boxed center">
+    {!!title && <h4 className="m-zero m-b-md">{title}</h4>}
+    <Glitchometer value={value} />
+    {!!caption && <h4 className="m-zero m-t-sm">{caption}</h4>}
+  </div>
+);
 
 export default React.memo(StatBox);

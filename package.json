@@ -2,7 +2,7 @@
   "name": "samiroy.com",
   "version": "1.0.0",
   "private": true,
-  "description": "Samiroy LLC - startup engineering",
+  "description": "Samiroy LLC Website",
   "author": "Samir Roy",
   "keywords": [
     "gatsby"
@@ -17,6 +17,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@samiroy/glitchometer": "^1.0.1",
+    "@samiroy/sprites": "^1.0.1",
     "@vercel/analytics": "^1.1.1",
     "gatsby": "^5.13.0",
     "gatsby-plugin-alias-imports": "^1.0.5",

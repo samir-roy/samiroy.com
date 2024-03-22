@@ -5,13 +5,16 @@ import Footer from '@widgets/Footer';
 
 const styles: Record<string, React.CSSProperties> = {
   page: {
-    padding: 16,
+    paddingTop: 32,
+    paddingLeft: 'var(--page-padding)',
+    paddingRight: 'var(--page-padding)',
+    paddingBottom: 64,
     width: '100%',
     marginLeft: 'auto',
     boxSizing: 'border-box',
     marginRight: 'auto',
     display: 'block',
-    maxWidth: 880,
+    maxWidth: 768,
   },
 };
 

@@ -1,6 +1,5 @@
 import * as React from 'react';
-import CarAnimation from '@components/animations/CarAnimation';
-import EndlessTrafficTitle from '@sprites/traffic/EndlessTrafficTitle';
+import { EndlessTrafficAnimatedLogo, EndlessTrafficTitle } from '@samiroy/sprites';
 import Margin from '@widgets/Margin';
 
 const EndlessTrafficHero = () => (
@@ -9,12 +8,9 @@ const EndlessTrafficHero = () => (
       <div style={{ width: 280, maxWidth: '100%', margin: '16px auto' }}>
         <EndlessTrafficTitle />
       </div>
-      <h2>
-        <div style={{ marginBottom: 4, marginLeft: 4, fontWeight: 300 }}>Arcade&nbsp;Game for&nbsp;iPhone</div>
-      </h2>
     </div>
     <div className="col-md-6 center">
-      <CarAnimation style={{ margin: 'auto' }} />
+      <EndlessTrafficAnimatedLogo style={{ margin: 'auto' }} />
       <Margin height={0} mobile={16} />
     </div>
   </div>
