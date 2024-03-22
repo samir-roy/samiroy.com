@@ -7,59 +7,46 @@ import PoonjiHero from '@components/heroes/PoonjiHero';
 import PoonjiCaption from '@content/PoonjiCaption';
 import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
 import EndlessTrafficCaption from '@content/EndlessTrafficCaption';
-import WoohooHero from '@components/heroes/WoohooHero';
-import WoohooCaption from '@content/WoohooCaption';
 import StatusBlock from '@content/StatusBlock';
 import AlsoBuiltBlock from '@content/AlsoBuiltBlock';
 import FounderStatBox from '@components/content/FounderStatBox';
 import PlayersStatBox from '@content/PlayersStatBox';
-import ContributionsStatBox from '@content/ContributionsStatBox';
 import Experience from '@content/Experience';
-import Education from '@content/Education';
 import OpenSource from '@content/OpenSource';
 
 const IndexPage = () => (
   <Page>
     <Margin height={96} />
-    <SamiroyHero subtitle="Startup Engineering" thin />
-    <Margin height={64} desktop={96} />
+    <SamiroyHero />
+    <Margin height={64} />
     <AboutCaption />
-    <Margin height={96} />
+    <Margin height={128} />
 
     <StatusBlock />
 
     <Margin height={64} />
     <PoonjiHero />
-    <Margin height={64} />
+    <Margin height={48} />
     <PoonjiCaption />
-    <Margin height={96} />
+    <Margin height={128} />
 
     <AlsoBuiltBlock />
 
     <Margin height={60} />
     <EndlessTrafficHero />
-    <Margin height={64} />
+    <Margin height={48} />
     <EndlessTrafficCaption />
     <Margin height={64} />
 
     <PlayersStatBox />
 
-    <Margin height={96} />
-    <WoohooHero />
-    <Margin height={64} />
-    <WoohooCaption />
-    <Margin height={96} />
+    <Margin height={128} />
+    <Experience compact />
+    <Margin height={32} />
 
     <FounderStatBox />
 
-    <Margin height={96} />
-    <Experience />
-    <Margin height={32} />
-    <ContributionsStatBox />
-
-    <Margin height={96} />
-    <Education />
-    <Margin height={96} />
+    <Margin height={128} />
 
     <OpenSource />
   </Page>

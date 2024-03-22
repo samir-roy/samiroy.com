@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     siteUrl: "https://samiroy.com",
-    title: "Samiroy - Startup Engineering",
+    title: "Samiroy",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

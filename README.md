@@ -1,2 +1,2 @@
 # samiroy.com
-Website for Samiroy LLC - startup engineering
+Website for Samiroy LLC

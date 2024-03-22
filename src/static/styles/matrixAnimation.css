@@ -1,8 +1,0 @@
-@keyframes matrix-animation-fade-out {
-  0% {opacity:1;}
-  100% {opacity:0.08;}
-}
-@-webkit-keyframes matrix-animation-fade-out {
-  0% {opacity:1;}
-  100% {opacity:0.08;}
-}

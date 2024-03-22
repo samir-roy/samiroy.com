@@ -1,5 +1,5 @@
 import * as React from 'react';
-import AppStoreButton from '@sprites/AppStoreButton';
+import { AppStoreButton } from '@samiroy/sprites';
 
 export const EndlessTrafficAppStoreButton = () => (
   <div className="w-sm m-auto">
@@ -11,9 +11,9 @@ export const EndlessTrafficAppStoreButton = () => (
 
 const EndlessTrafficCaption = () => (
   <>
-    <p className="caption m-b-lg">
-      Endless Traffic is a rush hour traffic frenzy arcade game for the iPhone and Apple Watch. Manage increasingly
-      rowdy traffic during rush hour to keep the intersection clear of accidents.
+    <p className="caption m-b-xl">
+      Endless Traffic is a casual arcade game for the iPhone and Apple Watch where the player must manage rowdy rush
+      hour traffic that will intensify over time and keep the intersection clear of accidents.
     </p>
     <div>
       <EndlessTrafficAppStoreButton />
