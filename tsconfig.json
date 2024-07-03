@@ -13,7 +13,6 @@
       "@components/*": ["./src/components/*"],
       "@content/*": ["./src/components/content/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@sprites/*": ["./src/components/sprites/*"],
       "@widgets/*": ["./src/components/widgets/*"],
       "@svg/*": ["./src/static/svg/*"],
       "@styles/*": ["./src/static/styles/*"]

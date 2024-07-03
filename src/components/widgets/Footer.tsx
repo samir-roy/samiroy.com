@@ -10,9 +10,9 @@ const styles: Record<string, React.CSSProperties> = {
     marginTop: 96,
   },
   logo: {
-    height: 38,
-    width: 33,
-    marginBottom: 8,
+    height: 30,
+    width: 28,
+    marginBottom: 12,
     marginTop: 8,
     marginLeft: 2,
     display: 'inline-block',
