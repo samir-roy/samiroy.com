@@ -17,7 +17,7 @@ const NavBar = ({ subtitle }: Props) => (
     {subtitle && <div style={{ marginTop: 16 }}>&nbsp;➼&nbsp;{subtitle}</div>}
     <div style={{ marginLeft: 'auto' }}>
       <Link to="/" className="no-hover">
-        <SamiroyLogo style={{ height: 32, width: 28 }} />
+        <SamiroyLogo style={{ height: 28, width: 26 }} />
       </Link>
     </div>
   </div>
