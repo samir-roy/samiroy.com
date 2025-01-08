@@ -15,12 +15,12 @@ const OpenSourceBlock = () => (
       <a href="https://github.com/samir-roy/init.nvim">here</a>. We even created our very own color scheme called{' '}
       <a href="https://github.com/samir-roy/shinjuku.nvim">Shinjuku</a>.
     </p>
-    <p className="center m-b-md">
+    <p className="center m-0">
       <img
         src="/shinjuku-screenshot.webp"
         loading="lazy"
-        width="226"
-        height="214"
+        width="316"
+        height="304"
         alt="screenshot"
         className="max-w-fit"
       />
