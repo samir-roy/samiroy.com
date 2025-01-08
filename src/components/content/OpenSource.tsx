@@ -6,34 +6,34 @@ const OpenSourceBlock = () => (
   <section>
     <h2>Open Source</h2>
     <p>
-      Some day we hope to contribute to some meaningful open source projects but until then we have some small stuff
-      open for anyone to stumble upon.
+      Our open source <a href="https://github.com/samir-roy?tab=repositories">repos</a> help showcase our coding style
+      and commitment to code quality. They include the source for the Endless Traffic game and various fintech tools or
+      widgets from the Poonji project.
     </p>
     <p>
-      We put a lot of love into our <a href="https://neovim.io">Neovim</a> configuration and have documented it via
-      comments for others to adopt. You can find the Lua source{' '}
-      <a href="https://github.com/samir-roy/init.nvim">here</a>. We even created our very own color scheme called{' '}
-      <a href="https://github.com/samir-roy/shinjuku.nvim">Shinjuku</a>.
+      We love <a href="https://neovim.io">Neovim</a> and maintain the Lua source for our config{' '}
+      <a href="https://github.com/samir-roy/init.nvim">here</a>. We created a custom color scheme for it called{' '}
+      <a href="https://github.com/samir-roy/shinjuku.nvim">Shinjuku</a>. It goes well with the tmux and terminal configs
+      found in the <a href="https://github.com/samir-roy/dotfiles">dotfiles</a> repo.
     </p>
-    <p className="center m-b-md">
+    <p className="center m-0">
       <img
         src="/shinjuku-screenshot.webp"
         loading="lazy"
-        width="226"
-        height="214"
+        width="316"
+        height="304"
         alt="screenshot"
         className="max-w-fit"
       />
     </p>
     <p>
-      This website is open source with the repo located <a href="https://github.com/samir-roy/samirroy.com">here</a>. It
-      is built using awesome open source technologies like <a href="https://www.typescriptlang.org">Typescript</a>,{' '}
-      <a href="https://reactjs.org">React</a>, & <a href="https://www.gatsbyjs.com">Gatsby</a>, and is hosted on{' '}
-      <a href="https://vercel.com">Vercel</a>.
+      This website is also open source, with the repo located{' '}
+      <a href="https://github.com/samir-roy/samirroy.com">here</a>. It is built using awesome open source technologies
+      like <a href="https://www.typescriptlang.org">Typescript</a>, <a href="https://reactjs.org">React</a>, &{' '}
+      <a href="https://www.gatsbyjs.com">Gatsby</a>, and is hosted on <a href="https://vercel.com">Vercel</a>.
     </p>
     <p>
-      That&#39;s not all! We welcome you to check out all our{' '}
-      <a href="https://github.com/samir-roy?tab=repositories">repos</a> to see if something piques your interest.
+      All our open source repos can be found <a href="https://github.com/samir-roy?tab=repositories">here</a>.
     </p>
     <Margin height={32} />
     <ContributionsStatBox />

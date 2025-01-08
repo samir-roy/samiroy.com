@@ -1,7 +1,7 @@
 import * as React from 'react';
 import StatisticBox from '@widgets/StatBox';
 
-const DEFAULT_CONTRIBS = '9,456'; // default to last updated
+const DEFAULT_CONTRIBS = '9,835'; // default to last updated
 
 const ContributionsStatBox = () => {
   const [contribs, setContribs] = React.useState(DEFAULT_CONTRIBS);
