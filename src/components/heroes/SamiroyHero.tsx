@@ -14,7 +14,7 @@ const SamiroyHero = ({ subtitle = '' }: Props) => (
     </div>
     <Margin height={80} />
     <div style={{ marginBottom: 16, display: 'inline-flex' }}>
-      <SamiroyTitle />
+      <SamiroyTitle style={{ height: 'auto', width: 320, maxWidth: '100%' }} />
     </div>
     <h2 style={{ margin: 0, marginTop: 16 }}>{subtitle}</h2>
   </div>

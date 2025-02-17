@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 const AboutCaption = () => (
-  <p className="font-lg font-light center">
-    Samiroy is an incubator that specializes in the creation and launch of captivating consumer-oriented product
-    innovations built on cutting-edge technologies.
-  </p>
+  <h1 className="font-lg font-light center">
+    Samiroy LLC is an incubator that develops captivating consumer-oriented product innovations built on cutting-edge
+    technologies.
+  </h1>
 );
 
 export default React.memo(AboutCaption);

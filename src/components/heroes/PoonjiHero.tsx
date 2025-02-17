@@ -1,15 +1,12 @@
 import * as React from 'react';
-import { useInView } from 'react-intersection-observer';
-import { PoonjiTitle, PoonjiAnimatedLogo } from '@samiroy/sprites';
+import { PoonjiTitle, PoonjiLogo } from '@samiroy/sprites';
 import Margin from '@widgets/Margin';
 
 const PoonjiHero = () => {
-  const [ref, inView] = useInView();
-
   return (
     <div className="col">
-      <div className="col-md-7 center" ref={ref}>
-        <PoonjiAnimatedLogo running={inView} />
+      <div className="col-md-7 center">
+        <PoonjiLogo style={{ width: 150, height: 150, margin: 'auto' }} />
         <Margin height={32} />
       </div>
       <div className="col-md-7 center">
