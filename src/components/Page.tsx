@@ -22,13 +22,13 @@ const Page = ({ title, children }: { title?: string; children: React.ReactNode }
   const topRef = React.useRef<HTMLDivElement>(null);
 
   return (
-    <main style={styles.page}>
+    <div style={styles.page}>
       <div id="top" ref={topRef} />
       <SEO title={title} />
-      {children}
+      <main>{children}</main>
       <Footer onBackToTop={() => topRef.current?.scrollIntoView({ behavior: 'smooth' })} />
       <Analytics />
-    </main>
+    </div>
   );
 };
 

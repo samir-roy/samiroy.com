@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Margin from '@widgets/Margin';
-import ContributionsStatBox from '@components/content/ContributionsStatBox';
 
 const OpenSourceBlock = () => (
   <section>
@@ -28,15 +26,13 @@ const OpenSourceBlock = () => (
     </p>
     <p>
       This website is also open source, with the repo located{' '}
-      <a href="https://github.com/samir-roy/samirroy.com">here</a>. It is built using awesome open source technologies
+      <a href="https://github.com/samir-roy/samiroy.com">here</a>. It is built using awesome open source technologies
       like <a href="https://www.typescriptlang.org">Typescript</a>, <a href="https://reactjs.org">React</a>, &{' '}
       <a href="https://www.gatsbyjs.com">Gatsby</a>, and is hosted on <a href="https://vercel.com">Vercel</a>.
     </p>
     <p>
       All our open source repos can be found <a href="https://github.com/samir-roy?tab=repositories">here</a>.
     </p>
-    <Margin height={32} />
-    <ContributionsStatBox />
   </section>
 );
 

@@ -25,7 +25,7 @@ type Props = {
 };
 
 const Footer = ({ onBackToTop }: Props) => (
-  <div style={styles.footer} className="col">
+  <footer style={styles.footer} className="boxed col">
     <div className="center footer">
       <Link to="/">Home</Link>
       {' | '}
@@ -46,7 +46,7 @@ const Footer = ({ onBackToTop }: Props) => (
       <SamiroyLogo style={styles.logo} />
     </div>
     <div className="center">&copy; Samiroy LLC. All Rights Reserved.</div>
-  </div>
+  </footer>
 );
 
 export default React.memo(Footer);
