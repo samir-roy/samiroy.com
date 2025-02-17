@@ -187,6 +187,7 @@ h5 {
 .m-t-lg { margin-top: 32px; }
 .m-t-xl { margin-top: 48px; }
 
+.font-sm { font-size: 0.66em; }
 .font-lg { font-size: 1.4em; }
 .font-normal { font-weight: 400; }
 .font-light { font-weight: 200; }
