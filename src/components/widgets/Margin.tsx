@@ -7,11 +7,13 @@ type Props = {
   desktop?: number;
   /** additional height to set for mobile, optional */
   mobile?: number;
+  /** name for anchor id to allow jumping to section */
+  name?: string;
 };
 
-const Margin = ({ height = 16, desktop, mobile }: Props = {}) => (
+const Margin = ({ height = 16, desktop, mobile, name }: Props = {}) => (
   <>
-    <div style={{ marginTop: height }} />
+    <div id={name} style={{ marginBottom: height }} />
     {desktop !== undefined && <div style={{ marginTop: desktop }} className="desktop" />}
     {mobile !== undefined && <div style={{ marginTop: mobile }} className="mobile" />}
   </>

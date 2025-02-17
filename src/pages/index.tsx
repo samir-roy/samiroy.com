@@ -8,7 +8,7 @@ import PoonjiCaption from '@content/PoonjiCaption';
 import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
 import EndlessTrafficCaption from '@content/EndlessTrafficCaption';
 import StatusBlock from '@content/StatusBlock';
-import AlsoBuiltBlock from '@content/AlsoBuiltBlock';
+import PoonjiStatBox from '@content/PoonjiStatBox';
 import PlayersStatBox from '@content/PlayersStatBox';
 import Experience from '@content/Experience';
 import ContributionsStatBox from '@content/ContributionsStatBox';
@@ -24,15 +24,15 @@ const IndexPage = () => (
 
     <StatusBlock />
 
-    <Margin height={64} />
+    <Margin name="poonji" height={128} />
     <PoonjiHero />
     <Margin height={48} />
     <PoonjiCaption />
-    <Margin height={128} />
+    <Margin height={64} />
 
-    <AlsoBuiltBlock />
+    <PoonjiStatBox />
 
-    <Margin height={60} />
+    <Margin name="traffic" height={128} />
     <EndlessTrafficHero />
     <Margin height={48} />
     <EndlessTrafficCaption />
@@ -40,13 +40,13 @@ const IndexPage = () => (
 
     <PlayersStatBox />
 
-    <Margin height={128} />
+    <Margin name="about" height={128} />
     <Experience compact />
     <Margin height={64} />
 
     <ContributionsStatBox />
 
-    <Margin height={128} />
+    <Margin name="oss" height={128} />
     <OpenSource />
     <Margin height={64} />
   </Page>

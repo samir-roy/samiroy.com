@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@samiroy/glitchometer": "^1.0.1",
+    "@samiroy/glitchometer": "^1.0.3",
     "@samiroy/sprites": "^1.1.2",
     "@vercel/analytics": "^1.2.2",
     "gatsby": "^5.13.3",
