@@ -1,5 +1,6 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
+import { Link } from 'gatsby';
+import { SamiroyBlueprintLogo } from '@samiroy/sprites';
 
 type Props = {
   compact?: boolean;
@@ -14,18 +15,24 @@ const Item = ({ title, subtitle }: { title: string; subtitle: string }) => (
 
 const Experience = ({ compact }: Props) => (
   <section>
-    <h2>Founded by Samir Roy</h2>
-    <p>
+    {compact && (
+      <div className="m-auto" style={{ height: 180 }}>
+        <SamiroyBlueprintLogo />
+      </div>
+    )}
+    <h2 className={compact ? 'center m-t-xl' : ''}>Founded by Samir Roy</h2>
+    <p className={compact ? 'center' : ''}>
       Samir is an entrepreneur and has been a senior engineering leader at several early-stage technology companies. He
       has worked on product and engineering at startups through various stages of growth and helped founders navigate
       acquisitions, fund raising, and accelerators, including Shark Tank and YCombinator.
-      {compact && (
-        <>
-          {' '}
-          <Link to="/about">[more]</Link>
-        </>
-      )}
     </p>
+    {compact && (
+      <p className="center">
+        <Link to="/about" className="button m-t-xl">
+          About
+        </Link>
+      </p>
+    )}
     {!compact && (
       <ul>
         <Item title="Consulting Engineer @ Benepass" subtitle="(YCombinator W20)" />

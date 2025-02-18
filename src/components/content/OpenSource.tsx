@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const OpenSourceBlock = () => (
-  <section>
+  <section className="center">
     <h2>Open Source</h2>
     <p>
       Our open source <a href="https://github.com/samir-roy?tab=repositories">repos</a> help showcase our coding style
@@ -28,7 +28,7 @@ const OpenSourceBlock = () => (
       This website is also open source, with the repo located{' '}
       <a href="https://github.com/samir-roy/samiroy.com">here</a>. It is built using awesome open source technologies
       like <a href="https://www.typescriptlang.org">Typescript</a>, <a href="https://reactjs.org">React</a>, &{' '}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>, and is hosted on <a href="https://vercel.com">Vercel</a>.
+      <a href="https://www.gatsbyjs.com">Gatsby</a>.
     </p>
     <p>
       All our open source repos can be found <a href="https://github.com/samir-roy?tab=repositories">here</a>.
