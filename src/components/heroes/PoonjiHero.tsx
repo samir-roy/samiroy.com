@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { PoonjiTitle, PoonjiLogo } from '@samiroy/sprites';
+import { PoonjiTitle, PoonjiAnimatedLogo } from '@samiroy/sprites';
 import Margin from '@widgets/Margin';
 
 const PoonjiHero = () => {
   return (
     <div className="col">
       <div className="col-md-7 center">
-        <PoonjiLogo style={{ width: 150, height: 150, margin: 'auto' }} />
+        <PoonjiAnimatedLogo style={{ width: 192, height: 192, margin: 'auto' }} />
         <Margin height={32} />
       </div>
       <div className="col-md-7 center">
