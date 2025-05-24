@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { SamiroyLogo } from '@samiroy/sprites';
+import DarkModeButton from '@widgets/DarkModeButton';
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
@@ -36,6 +37,9 @@ const Footer = ({ onBackToTop }: Props) => (
       <Link to="/endlesstraffic">Endless Traffic</Link>
       {' | '}
       <a href="https://www.poonji.io">Poonji</a>
+    </div>
+    <div className="center m-t-sm font-lg">
+      <DarkModeButton />
     </div>
     <div className="center m-t-sm">
       <button className="link" type="button" onClick={() => onBackToTop()}>

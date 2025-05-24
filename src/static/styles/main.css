@@ -1,17 +1,43 @@
 :root {
-  --background-color: #f1f1f1;
-  --text-color: #232129;
-  --light-text-color: #666666;
-  --light-bg-color: #dfdfdf;
-  --primary-text-color: #365c95;
-  --primary-glitch-color: #fff500;
-  --secondary-glitch-color: #8bb9ff;
-  --poonji-stroke-color: #394a6c;
-  --poonji-circuit-color: #38548b;
-  --poonji-shadow-color: #fedf82;
-  --poonji-outline-color: #2e4b84;
-  --poonji-candle-color: #2e4b84;
-
+  --day-background-color: #f1f1f1;
+  --day-text-color: #232129;
+  --day-light-text-color: #666666;
+  --day-light-bg-color: #dfdfdf;
+  --day-primary-text-color: #365c95;
+  --day-primary-glitch-color: #fff500;
+  --day-secondary-glitch-color: #8bb9ff;
+  --day-poonji-stroke-color: #394a6c;
+  --day-poonji-circuit-color: #38548b;
+  --day-poonji-shadow-color: #fedf82;
+  --day-poonji-outline-color: #2e4b84;
+  --day-poonji-candle-color: #2e4b84;
+  
+  --night-background-color: #1f2126;
+  --night-text-color: #efefef;
+  --night-light-text-color: #aaaaaa;
+  --night-light-bg-color: #000000;
+  --night-primary-text-color: #6491d4;
+  --night-primary-glitch-color: #324a74;
+  --night-secondary-glitch-color: #7d374c;
+  --night-poonji-stroke-color: #ffffff;
+  --night-poonji-circuit-color: #fedf82;
+  --night-poonji-shadow-color: #4270a6;
+  --night-poonji-outline-color: #394042;
+  --night-poonji-candle-color: #ffffff;
+  
+  --background-color: var(--day-background-color);
+  --text-color: var(--day-text-color);
+  --light-text-color: var(--day-light-text-color);
+  --light-bg-color: var(--day-light-bg-color);
+  --primary-text-color: var(--day-primary-text-color);
+  --primary-glitch-color: var(--day-primary-glitch-color);
+  --secondary-glitch-color: var(--day-secondary-glitch-color);
+  --poonji-stroke-color: var(--day-poonji-stroke-color);
+  --poonji-circuit-color: var(--day-poonji-circuit-color);
+  --poonji-shadow-color: var(--day-poonji-shadow-color);
+  --poonji-outline-color: var(--day-poonji-outline-color);
+  --poonji-candle-color: var(--day-poonji-candle-color);
+  
   --page-padding: 32px;
 }
 
@@ -20,23 +46,59 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #1f2126;
-    --text-color: #efefef;
-    --light-text-color: #aaaaaa;
-    --light-bg-color: #000000;
-    --primary-text-color: #6491d4;
-    --primary-glitch-color: #324a74;
-    --secondary-glitch-color: #7d374c;
-    --poonji-stroke-color: #ffffff;
-    --poonji-circuit-color: #fedf82;
-    --poonji-shadow-color: #4270a6;
-    --poonji-outline-color: #394042;
-    --poonji-candle-color: #ffffff;
- }
+    --background-color: var(--night-background-color);
+    --text-color: var(--night-text-color);
+    --light-text-color: var(--night-light-text-color);
+    --light-bg-color: var(--night-light-bg-color);
+    --primary-text-color: var(--night-primary-text-color);
+    --primary-glitch-color: var(--night-primary-glitch-color);
+    --secondary-glitch-color: var(--night-secondary-glitch-color);
+    --poonji-stroke-color: var(--night-poonji-stroke-color);
+    --poonji-circuit-color: var(--night-poonji-circuit-color);
+    --poonji-shadow-color: var(--night-poonji-shadow-color);
+    --poonji-outline-color: var(--night-poonji-outline-color);
+    --poonji-candle-color: var(--night-poonji-candle-color);
+  }
 
   .day { display: none; }
   .night { display: inline; }
 }
+
+html[data-theme="night"] {
+  --background-color: var(--night-background-color);
+  --text-color: var(--night-text-color);
+  --light-text-color: var(--night-light-text-color);
+  --light-bg-color: var(--night-light-bg-color);
+  --primary-text-color: var(--night-primary-text-color);
+  --primary-glitch-color: var(--night-primary-glitch-color);
+  --secondary-glitch-color: var(--night-secondary-glitch-color);
+  --poonji-stroke-color: var(--night-poonji-stroke-color);
+  --poonji-circuit-color: var(--night-poonji-circuit-color);
+  --poonji-shadow-color: var(--night-poonji-shadow-color);
+  --poonji-outline-color: var(--night-poonji-outline-color);
+  --poonji-candle-color: var(--night-poonji-candle-color);
+}
+
+html[data-theme="day"] {
+  --background-color: var(--day-background-color);
+  --text-color: var(--day-text-color);
+  --light-text-color: var(--day-light-text-color);
+  --light-bg-color: var(--day-light-bg-color);
+  --primary-text-color: var(--day-primary-text-color);
+  --primary-glitch-color: var(--day-primary-glitch-color);
+  --secondary-glitch-color: var(--day-secondary-glitch-color);
+  --poonji-stroke-color: var(--day-poonji-stroke-color);
+  --poonji-circuit-color: var(--day-poonji-circuit-color);
+  --poonji-shadow-color: var(--day-poonji-shadow-color);
+  --poonji-outline-color: var(--day-poonji-outline-color);
+  --poonji-candle-color: var(--day-poonji-candle-color);
+}
+
+html[data-theme="day"] .day { display: inline; }
+html[data-theme="day"] .night { display: none; }
+
+html[data-theme="night"] .day { display: none; }
+html[data-theme="night"] .night { display: inline; }
 
 html {
   scroll-behavior: smooth;
