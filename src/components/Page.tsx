@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { AnimateGlitches } from '@samiroy/sprites';
 import SEO from '@widgets/SEO';
 import Footer from '@widgets/Footer';
 
@@ -28,6 +29,7 @@ const Page = ({ title, children }: { title?: string; children: React.ReactNode }
       <main>{children}</main>
       <Footer onBackToTop={() => topRef.current?.scrollIntoView({ behavior: 'smooth' })} />
       <Analytics />
+      <AnimateGlitches />
     </div>
   );
 };
