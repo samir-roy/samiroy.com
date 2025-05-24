@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const ThemeToggle: React.FC = () => {
+const DarkModeButton = () => {
   const toggleTheme = React.useCallback(() => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -21,4 +21,4 @@ const ThemeToggle: React.FC = () => {
   );
 };
 
-export default React.memo(ThemeToggle);
+export default React.memo(DarkModeButton);
