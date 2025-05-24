@@ -1,5 +1,5 @@
 import './src/static/styles/main.css';
-import { initializeTheme } from './src/utils/theme-utils';
+import { initializeTheme } from './gatsby-utils';
 
 export const onClientEntry = () => {
   // eslint-disable-next-line no-eval

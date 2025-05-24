@@ -1,6 +1,4 @@
-/* Define color schemes */
 :root {
-  /* Day theme colors (default) */
   --day-background-color: #f1f1f1;
   --day-text-color: #232129;
   --day-light-text-color: #666666;
@@ -14,7 +12,6 @@
   --day-poonji-outline-color: #2e4b84;
   --day-poonji-candle-color: #2e4b84;
   
-  /* Night theme colors */
   --night-background-color: #1f2126;
   --night-text-color: #efefef;
   --night-light-text-color: #aaaaaa;
@@ -28,7 +25,6 @@
   --night-poonji-outline-color: #394042;
   --night-poonji-candle-color: #ffffff;
   
-  /* Apply day theme by default */
   --background-color: var(--day-background-color);
   --text-color: var(--day-text-color);
   --light-text-color: var(--day-light-text-color);
@@ -42,14 +38,12 @@
   --poonji-outline-color: var(--day-poonji-outline-color);
   --poonji-candle-color: var(--day-poonji-candle-color);
   
-  /* Layout variables */
   --page-padding: 32px;
 }
 
 .day { display: inline; }
 .night { display: none; }
 
-/* Apply night theme when system preference is dark */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--night-background-color);
@@ -70,7 +64,6 @@
   .night { display: inline; }
 }
 
-/* Override with data-theme attribute when user has selected a theme manually */
 html[data-theme="night"] {
   --background-color: var(--night-background-color);
   --text-color: var(--night-text-color);

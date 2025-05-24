@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './src/static/styles/main.css';
-import { initializeTheme } from './src/utils/theme-utils';
+import { initializeTheme } from './gatsby-utils';
 
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([

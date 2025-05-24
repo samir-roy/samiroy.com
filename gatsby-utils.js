@@ -1,7 +1,3 @@
-/**
- * Sets the theme based on localStorage or system preference
- * Used in both gatsby-browser.js and gatsby-ssr.js to prevent theme flickering
- */
 export const initializeTheme = () => {
   return `
     (function() {
