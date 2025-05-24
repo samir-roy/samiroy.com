@@ -1,4 +1,5 @@
 :root {
+  /* Default light/day theme colors */
   --background-color: #f1f1f1;
   --text-color: #232129;
   --light-text-color: #666666;
@@ -40,25 +41,8 @@
 }
 
 /* Override with data-theme attribute when user has selected a theme manually */
-html[data-theme="light"] {
-  --background-color: #f1f1f1;
-  --text-color: #232129;
-  --light-text-color: #666666;
-  --light-bg-color: #dfdfdf;
-  --primary-text-color: #365c95;
-  --primary-glitch-color: #fff500;
-  --secondary-glitch-color: #8bb9ff;
-  --poonji-stroke-color: #394a6c;
-  --poonji-circuit-color: #38548b;
-  --poonji-shadow-color: #fedf82;
-  --poonji-outline-color: #2e4b84;
-  --poonji-candle-color: #2e4b84;
-}
-
-html[data-theme="light"] .day { display: inline; }
-html[data-theme="light"] .night { display: none; }
-
-html[data-theme="dark"] {
+/* No need to redefine light/day theme colors as they're already in :root */
+html[data-theme="night"] {
   --background-color: #1f2126;
   --text-color: #efefef;
   --light-text-color: #aaaaaa;
@@ -73,8 +57,11 @@ html[data-theme="dark"] {
   --poonji-candle-color: #ffffff;
 }
 
-html[data-theme="dark"] .day { display: none; }
-html[data-theme="dark"] .night { display: inline; }
+html[data-theme="day"] .day { display: inline; }
+html[data-theme="day"] .night { display: none; }
+
+html[data-theme="night"] .day { display: none; }
+html[data-theme="night"] .night { display: inline; }
 
 html {
   scroll-behavior: smooth;
