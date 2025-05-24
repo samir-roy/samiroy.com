@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { SamiroyLogo } from '@samiroy/sprites';
+import ThemeToggle from './ThemeToggle';
 
 const styles: Record<string, React.CSSProperties> = {
   footer: {
@@ -41,6 +42,8 @@ const Footer = ({ onBackToTop }: Props) => (
       <button className="link" type="button" onClick={() => onBackToTop()}>
         back to top
       </button>
+      {' | '}
+      <ThemeToggle />
     </div>
     <div className="center m-t-md">
       <SamiroyLogo style={styles.logo} />
