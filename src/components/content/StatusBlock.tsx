@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import DarkModeButton from '@widgets/DarkModeButton';
 
 const StatusBlock = () => (
   <div className="boxed col">
@@ -12,8 +11,6 @@ const StatusBlock = () => (
       <Link to="#about">About</Link>
       &nbsp;&nbsp;•&nbsp;&nbsp;
       <Link to="#oss">Open&nbsp;Source</Link>
-      &nbsp;&nbsp;•&nbsp;&nbsp;
-      <DarkModeButton />
     </div>
   </div>
 );
