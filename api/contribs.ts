@@ -37,7 +37,7 @@ export default async function handler(_req: GatsbyFunctionRequest, res: GatsbyFu
     const { totalContributions } = json.data.user.contributionsCollection.contributionCalendar;
 
     // add current year count from response to past year total
-    const contribs = totalContributions + 10000;
+    const contribs = totalContributions + 9835;
 
     res.setHeader('Cache-control', 'public, max-age=43200');
     res.json({ contribs: contribs.toLocaleString() });
