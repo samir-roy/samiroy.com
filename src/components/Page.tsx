@@ -19,7 +19,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
 };
 
-const Page = ({ title, children }: { title?: string; children: React.ReactNode }) => {
+const Page = ({ title, noFooter, children }: { title?: string; noFooter?: boolean; children: React.ReactNode }) => {
   const topRef = React.useRef<HTMLDivElement>(null);
 
   return (
@@ -27,7 +27,7 @@ const Page = ({ title, children }: { title?: string; children: React.ReactNode }
       <div id="top" ref={topRef} />
       <SEO title={title} />
       <main>{children}</main>
-      <Footer onBackToTop={() => topRef.current?.scrollIntoView({ behavior: 'smooth' })} />
+      {!noFooter && <Footer onBackToTop={() => topRef.current?.scrollIntoView({ behavior: 'smooth' })} />}
       <Analytics />
       <AnimateGlitches />
     </div>

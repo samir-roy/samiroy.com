@@ -10,11 +10,12 @@ const WoohooPage = () => (
     <Margin height={64} />
     <WoohooHero />
     <Margin height={64} />
-    <p className="center m-b-lg">
+    <p className="center">
       WooHoo was a live fantasy sports platform.
       <br />
       It was acquired by TransStadia.
     </p>
+    <Margin height={32} />
   </Page>
 );
 
