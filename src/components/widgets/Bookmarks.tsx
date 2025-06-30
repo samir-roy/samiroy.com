@@ -67,15 +67,11 @@ const Bookmarks = () => {
 
   return (
     <div
-      className="boxed m-auto center"
+      className="boxed m-auto col center"
       style={{
-        width: 480,
-        maxWidth: '100%',
-        height: 'calc(100vh - 580px)',
+        maxHeight: 'calc(100vh - 580px)',
         lineHeight: '2em',
         overflow: 'auto',
-        display: 'flex',
-        flexDirection: 'column',
       }}
     >
       {bookmarks.map((bookmark) => (
