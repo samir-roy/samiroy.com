@@ -44,20 +44,22 @@ const Bookmarks = () => {
       if (globalWindow.samiroy) {
         return;
       }
-      globalWindow.samiroy.bookmarks = {
-        add: (label: string, url: string) => {
-          const storedBookmarks = localStorage.getItem(STORAGE_KEY);
-          const current = storedBookmarks ? JSON.parse(storedBookmarks) : DEFAULT_BOOKMARKS;
-          const updated = [...current, { label, url }];
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-          setBookmarks(updated);
-        },
-        remove: (label: string) => {
-          const storedBookmarks = localStorage.getItem(STORAGE_KEY);
-          const current = storedBookmarks ? JSON.parse(storedBookmarks) : DEFAULT_BOOKMARKS;
-          const updated = current.filter((bookmark: Bookmark) => bookmark.label !== label);
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-          setBookmarks(updated);
+      globalWindow.samiroy = {
+        bookmarks: {
+          add: (label: string, url: string) => {
+            const storedBookmarks = localStorage.getItem(STORAGE_KEY);
+            const current = storedBookmarks ? JSON.parse(storedBookmarks) : DEFAULT_BOOKMARKS;
+            const updated = [...current, { label, url }];
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+            setBookmarks(updated);
+          },
+          remove: (label: string) => {
+            const storedBookmarks = localStorage.getItem(STORAGE_KEY);
+            const current = storedBookmarks ? JSON.parse(storedBookmarks) : DEFAULT_BOOKMARKS;
+            const updated = current.filter((bookmark: Bookmark) => bookmark.label !== label);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+            setBookmarks(updated);
+          },
         },
       };
     }
