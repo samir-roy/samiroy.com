@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Samiroy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samiroy.com">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Samiroy LLC">
+    <meta name="description" content="Samiroy LLC">
+    <meta name="keywords" content="samiroy, startup, product, engineer, software, quant">
+    <meta name="author" content="Samir Roy">
+    <style>:root{--day-background-color:#f1f1f1;--day-text-color:#232129;--day-light-text-color:#666;--day-light-bg-color:#dfdfdf;--day-primary-text-color:#365c95;--day-primary-glitch-color:#fff500;--day-secondary-glitch-color:#8bb9ff;--day-poonji-stroke-color:#394a6c;--day-poonji-circuit-color:#38548b;--day-poonji-shadow-color:#fedf82;--day-poonji-outline-color:#2e4b84;--day-poonji-candle-color:#2e4b84;--night-background-color:#1f2126;--night-text-color:#efefef;--night-light-text-color:#aaa;--night-light-bg-color:#000;--night-primary-text-color:#6491d4;--night-primary-glitch-color:#324a74;--night-secondary-glitch-color:#7d374c;--night-poonji-stroke-color:#fff;--night-poonji-circuit-color:#fedf82;--night-poonji-shadow-color:#4270a6;--night-poonji-outline-color:#394042;--night-poonji-candle-color:#fff;--background-color:var(--day-background-color);--text-color:var(--day-text-color);--light-text-color:var(--day-light-text-color);--light-bg-color:var(--day-light-bg-color);--primary-text-color:var(--day-primary-text-color);--primary-glitch-color:var(--day-primary-glitch-color);--secondary-glitch-color:var(--day-secondary-glitch-color);--poonji-stroke-color:var(--day-poonji-stroke-color);--poonji-circuit-color:var(--day-poonji-circuit-color);--poonji-shadow-color:var(--day-poonji-shadow-color);--poonji-outline-color:var(--day-poonji-outline-color);--poonji-candle-color:var(--day-poonji-candle-color);--page-padding:32px}.day{display:inline}.night{display:none}@media (prefers-color-scheme:dark){:root{--background-color:var(--night-background-color);--text-color:var(--night-text-color);--light-text-color:var(--night-light-text-color);--light-bg-color:var(--night-light-bg-color);--primary-text-color:var(--night-primary-text-color);--primary-glitch-color:var(--night-primary-glitch-color);--secondary-glitch-color:var(--night-secondary-glitch-color);--poonji-stroke-color:var(--night-poonji-stroke-color);--poonji-circuit-color:var(--night-poonji-circuit-color);--poonji-shadow-color:var(--night-poonji-shadow-color);--poonji-outline-color:var(--night-poonji-outline-color);--poonji-candle-color:var(--night-poonji-candle-color)}.day{display:none}.night{display:inline}}html[data-theme=night]{--background-color:var(--night-background-color);--text-color:var(--night-text-color);--light-text-color:var(--night-light-text-color);--light-bg-color:var(--night-light-bg-color);--primary-text-color:var(--night-primary-text-color);--primary-glitch-color:var(--night-primary-glitch-color);--secondary-glitch-color:var(--night-secondary-glitch-color);--poonji-stroke-color:var(--night-poonji-stroke-color);--poonji-circuit-color:var(--night-poonji-circuit-color);--poonji-shadow-color:var(--night-poonji-shadow-color);--poonji-outline-color:var(--night-poonji-outline-color);--poonji-candle-color:var(--night-poonji-candle-color)}html[data-theme=day]{--background-color:var(--day-background-color);--text-color:var(--day-text-color);--light-text-color:var(--day-light-text-color);--light-bg-color:var(--day-light-bg-color);--primary-text-color:var(--day-primary-text-color);--primary-glitch-color:var(--day-primary-glitch-color);--secondary-glitch-color:var(--day-secondary-glitch-color);--poonji-stroke-color:var(--day-poonji-stroke-color);--poonji-circuit-color:var(--day-poonji-circuit-color);--poonji-shadow-color:var(--day-poonji-shadow-color);--poonji-outline-color:var(--day-poonji-outline-color);--poonji-candle-color:var(--day-poonji-candle-color)}html[data-theme=day] .day{display:inline}html[data-theme=day] .night,html[data-theme=night] .day{display:none}html[data-theme=night] .night{display:inline}html{scroll-behavior:smooth}body{background-color:var(--background-color);color:var(--text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:18px;font-weight:400;line-height:1.2}p{margin-bottom:.8em;margin-top:0}li{margin-bottom:8px}a{color:var(--primary-text-color)}a:focus,a:hover,button.link:focus,button.link:hover{background-color:var(--primary-text-color);color:var(--background-color)}a.no-hover:focus,a.no-hover:hover{background-color:inherit;color:var(--primary-text-color)}button.link{background:inherit;border:0;color:var(--primary-text-color);cursor:pointer;font-size:inherit;font-weight:inherit;padding:0}h1{font-weight:600;margin-bottom:32px;margin-top:0}h2{font-size:1.6em}h2,h3{font-weight:200;margin-bottom:16px;margin-top:0}h3{font-size:1.4em}h4{font-weight:300}h4,h5{font-size:1.2em}h5{font-weight:200;margin-bottom:16px;margin-top:0}.mobile{display:block}.desktop{display:none}.col-md-5,.col-md-6,.col-md-7{min-height:1px;position:relative;width:100%}.col{flex-direction:column}.col,.flex-reverse{align-items:center;display:flex;justify-content:center}.flex-reverse{flex-direction:column-reverse}.flex{align-items:center;display:flex;flex-direction:column;justify-content:center}.center-md-left,.center-md-right{text-align:center}.quote{font-style:italic}.light-text{color:var(--light-text-color);font-weight:300}.center{text-align:center}.justify{text-align:justify}.together{display:inline-block}.monospace{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace}.caps{text-transform:uppercase}.carousel>img{border-radius:12px;padding:4px}.boxed{background-color:var(--light-bg-color);border-radius:8px;color:var(--light-text-color);padding:32px}.caption{font-size:1.4em;font-weight:200}.button,.caption{text-align:center}.button{background-color:var(--text-color);border:1px solid transparent;border-radius:6px;box-sizing:border-box;-moz-box-sizing:border-box;color:var(--background-color);cursor:pointer;display:inline-block;font-size:15px;font-weight:700;line-height:38px;margin:0;padding:6px 14px;text-decoration:none;transition:background-color .2s linear;vertical-align:middle;white-space:nowrap}.button:active,.button:focus,.button:hover{background-color:var(--light-text-color)}.m-auto{margin:auto}.m-zero{margin:0}.m-b-sm{margin-bottom:8px}.m-b-md{margin-bottom:16px}.m-b-lg{margin-bottom:32px}.m-b-xl{margin-bottom:48px}.m-t-sm{margin-top:8px}.m-t-md{margin-top:16px}.m-t-lg{margin-top:32px}.m-t-xl{margin-top:48px}.font-sm{font-size:.66em}.font-lg{font-size:1.4em}.font-normal{font-weight:400}.font-light{font-weight:200}.font-bold{font-weight:500}.font-heavy{font-weight:600}.w-sm{width:150px}.w-xl{max-width:100%;width:350px}.min-w-sm{min-width:150px}.min-w-lg{min-width:200px}.max-w-fit{height:auto;max-width:100%}.h-button{height:50px}.footer{margin-top:auto;& a{text-decoration:none}}@media (min-width:768px){:root{--page-padding:64px}h2{font-size:1.8em}.mobile{display:none}.desktop{display:block}.col-md-5,.col-md-6,.col-md-7{float:left}.col-md-7{width:60%}.col-md-6{width:50%}.col-md-5{width:40%}.flex,.flex-reverse{flex-direction:row}.center-md-left{text-align:left}.center-md-right{text-align:right}.caption,.font-lg{font-size:1.6em}}@media (max-width:385px){:root{--page-padding:20px}}@keyframes matrix-animation-fade-out{0%{opacity:1}to{opacity:.08}}.pong-clear{clear:both}.pong-wrapper{height:150px;margin:0 auto;position:relative;width:100%}.pong-left-paddle{animation:pong-animation-left-paddle 5s infinite;background:var(--primary-glitch-color)}.pong-left-paddle,.pong-right-paddle{border-radius:4px;height:50px;position:absolute;width:16px}.pong-right-paddle{animation:pong-animation-right-paddle 5s infinite;background:var(--secondary-glitch-color);left:calc(100% - 16px)}.pong-ball{animation:pong-animation-ball 5s linear infinite;background:var(--light-bg-color);border-radius:4px;height:20px;position:absolute;width:16px}@keyframes pong-animation-left-paddle{0%{top:0}75%{top:100px}to{top:0}}@keyframes pong-animation-right-paddle{0%{top:100px}25%{top:100px}50%{top:0}to{top:100px}}@keyframes pong-animation-ball{0%{left:calc(.1% + 16px);top:8px}25%{left:calc(50% - 12px);top:132px}50%{left:calc(99.9% - 32px);top:8px}75%{left:calc(50% - 12px);top:132px}to{left:calc(.1% + 16px);top:8px}}@keyframes animation-glitch-primary{0%,to{transform:translateX(0)}90%{transform:translateX(-2px)}97%{transform:translateX(1px)}}@keyframes animation-glitch-secondary{0%,95%,to{transform:translateX(0)}90%{transform:translateX(1px)}}.glitch-primary{animation:animation-glitch-primary 5s ease-in-out infinite}.glitch-secondary{animation:animation-glitch-secondary 5s ease-in-out infinite}@keyframes animation-bounce{0%,50%,to{-webkit-transform:translateY(0)}25%{-webkit-transform:translateY(-5px)}75%{-webkit-transform:translateY(-5px)}}.bounce{animation:animation-bounce 1s ease-in infinite}</style>
+    <title>Welcome</title>
+    <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+      } catch (e) {
+        // Handle case where localStorage is not available
+      }
+    })();
+    </script>
+    <style>
+    @keyframes matrix-animation-fade-out {
+      0% {opacity:1;}
+      100% {opacity:0.08;}
+    }
+    @-webkit-keyframes matrix-animation-fade-out {
+      0% {opacity:1;}
+      100% {opacity:0.08;}
+    }
+    </style>
+    <script>
+    // Matrix animation implementation
+    document.addEventListener('DOMContentLoaded', function() {
+      // Matrix data - 4 rows, 8 columns
+      const matrix = [
+        [0, 0, 1, 1, 0, 1, 0, 1], 
+        [1, 1, 0, 1, 1, 0, 1, 0], 
+        [0, 1, 0, 1, 0, 1, 0, 1], 
+        [1, 0, 0, 0, 1, 1, 0, 0]
+      ];
+      
+      // Distribution pattern for column selection
+      const distribution = [0, 5, 2, 1, 3, 7, 4, 6, 0, 2, 5, 1, 7, 3, 6, 4];
+      
+      // State for two animation drops
+      let drop1 = { row: 0, col: 0, pos: 0 };
+      let drop2 = { row: 4, col: distribution[4], pos: 4 };
+      
+      // Initialize all matrix elements with fade animation
+      function initializeAnimation() {
+        const elementsWithNone = document.querySelectorAll('[style*="animation:none"]');
+        elementsWithNone.forEach(element => {
+          if (element.style.marginBottom === '4px') { // Only target matrix digits
+            element.style.animation = 'matrix-animation-fade-out 0.7s forwards';
+            element.style.webkitAnimation = 'matrix-animation-fade-out 0.7s forwards';
+          }
+        });
+      }
+      
+      function updateAnimation() {
+        // Find all matrix digit elements (both with fade animation and those with none)
+        const elementsWithAnimation = document.querySelectorAll('[style*="matrix-animation-fade-out"]');
+        const elementsWithNone = document.querySelectorAll('[style*="animation:none"]');
+        const allElements = [...elementsWithAnimation, ...elementsWithNone];
+        
+        allElements.forEach((element, index) => {
+          const row = Math.floor(index / 8);
+          const col = index % 8;
+          
+          // Check if this position should reset its animation
+          const shouldReset = (row === drop1.row && col === drop1.col) || 
+                             (row === drop2.row && col === drop2.col);
+          
+          if (shouldReset) {
+            // Reset animation by removing and re-adding it
+            element.style.animation = 'none';
+            element.style.webkitAnimation = 'none';
+            // Force reflow
+            element.offsetHeight;
+            element.style.animation = 'matrix-animation-fade-out 0.7s forwards';
+            element.style.webkitAnimation = 'matrix-animation-fade-out 0.7s forwards';
+          }
+        });
+        
+        // Update drop positions
+        drop1.row++;
+        if (drop1.row === 4) {
+          drop1.row = 0;
+          drop1.pos = (drop1.pos === 15) ? 0 : drop1.pos + 1;
+          drop1.col = distribution[drop1.pos];
+        }
+        
+        drop2.row++;
+        if (drop2.row === 4) {
+          drop2.row = 0;
+          drop2.pos = (drop2.pos === 15) ? 0 : drop2.pos + 1;
+          drop2.col = distribution[drop2.pos];
+        }
+      }
+      
+      // Initialize animations first
+      initializeAnimation();
+      
+      // Start the animation interval
+      setInterval(updateAnimation, 99);
+    });
+    </script>
+  </head>
+  <body>
+    <div id="___gatsby">
+      <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+        <div style="padding-top:32px;padding-left:var(--page-padding);padding-right:var(--page-padding);padding-bottom:64px;width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;display:block;max-width:768px">
+          <div id="top"></div>
+          <main>
+            <div style="margin-bottom:96px"></div>
+            <div class="col center">
+              <div class="w-xl">
+                <div style="display:inline-block;margin:auto;position:relative">
+                  <div style="top:18px;left:36px;position:absolute;z-index:1">
+                    <div style="flex-direction:row;display:flex">
+                      <div style="animation:none;-webkit-animation:none;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction:row;display:flex">
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction:row;display:flex">
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction:row;display:flex">
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:6px;height:11px;padding-left:5px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.704 0.0559998C0.304 0.0559998 0.208 0.136 0.208 0.551999V1.448C0.208 1.848 0.288 1.944 0.672 1.944H1.072C1.312 1.944 1.376 2.056 1.376 2.264V5.48C1.376 5.992 1.2 6.152 0.88 6.136C0.384 6.12 0.208 6.184 0.208 6.728V10.36C0.208 10.888 0.32 11 0.848 11H4.384C4.912 11 5.024 10.888 5.024 10.36V6.776C5.024 6.248 4.912 6.136 4.384 6.136H3.424C2.784 6.136 2.688 6.008 2.688 5.448V0.712C2.688 0.2 2.544 0.0559998 2.032 0.0559998H0.704Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div style="animation:matrix-animation-fade-out 0.7s forwards;-webkit-animation:matrix-animation-fade-out 0.7s forwards;margin-bottom:4px">
+                        <div style="width:8px;height:11px;padding-left:3px;padding-right:3px;padding-top:2px;padding-bottom:2px;display:flex">
+                          <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.597735 0L5.66799 0C6.0927 0 6.25 0.160819 6.25 0.595029L6.25 10.405C6.25 10.8392 6.0927 11 5.66799 11H0.582004C0.157298 11 0 10.8392 0 10.405L0 0.611111C0 0.192982 0.188758 0 0.597735 0ZM4.61409 1.54029L1.58872 1.54029C1.2112 1.55637 1.06963 1.63678 1.06963 2.11923L1.06963 9.32749C1.06963 9.79386 1.17974 9.90643 1.63591 9.90643H2.29481C2.75098 9.90643 2.86109 9.79386 2.86109 9.32749L2.86109 6.61322C2.86109 6.0986 3.15996 6.0986 3.52174 6.0986C3.5477 6.0986 4.66529 6.09869 4.68979 6.0986C4.99194 6.09749 5.18037 6.06885 5.18037 5.50357L5.18037 2.11923C5.18037 1.65286 5.07026 1.54029 4.61409 1.54029Z" fill="var(--text-color)">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display:inline-block;position:relative">
+                    <div style="height:192px;width:174px">
+                      <svg width="100%" height="100%" viewBox="0 0 163 180" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M129.136 167.41C130.747 167.497 132.262 168.199 133.371 169.37C134.48 170.541 135.098 172.092 135.098 173.705C135.098 175.318 134.48 176.869 133.371 178.04C132.262 179.211 130.747 179.912 129.136 180H58.0867C56.4764 179.912 54.9609 179.211 53.852 178.04C52.743 176.869 52.125 175.318 52.125 173.705C52.125 172.092 52.743 170.541 53.852 169.37C54.9609 168.199 56.4764 167.497 58.0867 167.41H129.136Z" fill="var(--secondary-glitch-color)" class="glitch-secondary">
+                        </path>
+                        <path d="M147.727 119.022C149.337 119.109 150.853 119.811 151.961 120.982C153.07 122.153 153.688 123.704 153.688 125.317C153.688 126.93 153.07 128.481 151.961 129.652C150.853 130.823 149.337 131.524 147.727 131.612H136.621C135.01 131.524 133.495 130.823 132.386 129.652C131.277 128.481 130.659 126.93 130.659 125.317C130.659 123.704 131.277 122.153 132.386 120.982C133.495 119.811 135.01 119.109 136.621 119.022H147.727Z" fill="var(--secondary-glitch-color)" class="glitch-secondary">
+                        </path>
+                        <path d="M147.727 141.746C149.337 141.834 150.853 142.535 151.961 143.706C153.07 144.877 153.688 146.429 153.688 148.041C153.688 149.654 153.07 151.205 151.961 152.376C150.853 153.547 149.337 154.249 147.727 154.337H136.621C135.01 154.249 133.495 153.547 132.386 152.376C131.277 151.205 130.659 149.654 130.659 148.041C130.659 146.429 131.277 144.877 132.386 143.706C133.495 142.535 135.01 141.834 136.621 141.746H147.727Z" fill="var(--secondary-glitch-color)" class="glitch-secondary">
+                        </path>
+                        <path d="M92.6309 100.863C88.4798 100.863 50.892 100.863 40.4729 97.9783C36.991 97.0409 33.8164 95.2055 31.2667 92.6558C28.717 90.1061 26.8816 86.9315 25.9442 83.4496C23.1007 72.7399 23.0592 51.5488 23.0592 50.6563C23.0592 49.7638 23.0592 28.5727 25.9234 17.9045C26.8608 14.4226 28.6962 11.248 31.2459 8.69832C33.7957 6.14861 36.9703 4.31322 40.4521 3.37581C50.8298 0.573849 88.376 0.490829 92.6101 0.490829C96.8442 0.490829 134.349 0.490828 144.768 3.37581C148.25 4.31322 151.425 6.14861 153.974 8.69832C156.524 11.248 158.359 14.4226 159.297 17.9045C162.14 28.5727 162.161 49.7431 162.161 50.6563C162.161 51.5695 162.161 72.7399 159.297 83.4081C158.359 86.89 156.524 90.0646 153.974 92.6143C151.425 95.164 148.25 96.9994 144.768 97.9368C134.349 100.801 96.7819 100.863 92.6309 100.863ZM92.6309 8.73066C81.4023 8.73066 50.5599 9.20804 42.6314 11.3458C40.5561 11.9111 38.666 13.0122 37.1505 14.5386C35.6351 16.0649 34.5476 17.963 33.9972 20.0423C31.4028 29.6727 31.3613 50.4487 31.3613 50.6563C31.3613 50.8639 31.3613 71.6399 33.9557 81.2703C34.5061 83.3496 35.5935 85.2477 37.109 86.774C38.6244 88.3004 40.5146 89.4015 42.5899 89.9668C50.5184 92.0423 81.3815 92.5819 92.5893 92.5819C103.797 92.5819 134.681 92.1668 142.61 89.9668C144.685 89.4015 146.575 88.3004 148.09 86.774C149.606 85.2477 150.693 83.3496 151.244 81.2703C153.797 71.6399 153.817 50.8639 153.817 50.6563C153.817 50.4487 153.817 29.6727 151.223 20.0423C150.673 17.963 149.585 16.0649 148.07 14.5386C146.554 13.0122 144.664 11.9111 142.589 11.3458C134.681 9.14577 103.818 8.75142 92.6309 8.75142V8.73066Z" fill="var(--secondary-glitch-color)" class="glitch-secondary">
+                        </path>
+                        <path d="M35.0691 180H113.624C115.235 179.912 116.75 179.211 117.859 178.04C118.968 176.869 119.586 175.318 119.586 173.705C119.586 172.092 118.968 170.541 117.859 169.37C116.75 168.199 115.235 167.497 113.624 167.41H35.0691C33.4588 167.497 31.9433 168.199 30.8344 169.37C29.7255 170.541 29.1074 172.092 29.1074 173.705C29.1074 175.318 29.7255 176.869 30.8344 178.04C31.9433 179.211 33.4588 179.912 35.0691 180Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M17.3656 131.504H35.977C37.5873 131.416 39.1028 130.715 40.2117 129.544C41.3206 128.373 41.9386 126.821 41.9386 125.209C41.9386 123.596 41.3206 122.045 40.2117 120.874C39.1028 119.703 37.5873 119.001 35.977 118.914H17.3656C15.7553 119.001 14.2398 119.703 13.1309 120.874C12.022 122.045 11.4039 123.596 11.4039 125.209C11.4039 126.821 12.022 128.373 13.1309 129.544C14.2398 130.715 15.7553 131.416 17.3656 131.504Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M81.5623 131.504H100.174C101.784 131.416 103.3 130.715 104.409 129.544C105.518 128.373 106.136 126.821 106.136 125.209C106.136 123.596 105.518 122.045 104.409 120.874C103.3 119.703 101.784 119.001 100.174 118.914H81.5623C79.952 119.001 78.4365 119.703 77.3275 120.874C76.2186 122.045 75.6006 123.596 75.6006 125.209C75.6006 126.821 76.2186 128.373 77.3275 129.544C78.4365 130.715 79.952 131.416 81.5623 131.504Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M49.7478 131.504H68.3593C69.9696 131.416 71.4851 130.715 72.594 129.544C73.7029 128.373 74.3209 126.821 74.3209 125.209C74.3209 123.596 73.7029 122.045 72.594 120.874C71.4851 119.703 69.9696 119.001 68.3593 118.914H49.7478C48.1375 119.001 46.622 119.703 45.5131 120.874C44.4042 122.045 43.7861 123.596 43.7861 125.209C43.7861 126.821 44.4042 128.373 45.5131 129.544C46.622 130.715 48.1375 131.416 49.7478 131.504Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M113.603 131.612H132.215C133.825 131.524 135.34 130.823 136.449 129.652C137.558 128.481 138.176 126.93 138.176 125.317C138.176 123.704 137.558 122.153 136.449 120.982C135.34 119.811 133.825 119.109 132.215 119.022H113.603C111.993 119.109 110.477 119.811 109.368 120.982C108.26 122.153 107.641 123.704 107.641 125.317C107.641 126.93 108.26 128.481 109.368 129.652C110.477 130.823 111.993 131.524 113.603 131.612Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M17.3655 154.228H35.9771C37.5874 154.141 39.1029 153.439 40.2118 152.268C41.3207 151.097 41.9387 149.546 41.9387 147.933C41.9387 146.32 41.3207 144.769 40.2118 143.598C39.1029 142.427 37.5874 141.726 35.9771 141.638H17.3655C15.7552 141.726 14.2397 142.427 13.1308 143.598C12.0218 144.769 11.4038 146.32 11.4038 147.933C11.4038 149.546 12.0218 151.097 13.1308 152.268C14.2397 153.439 15.7552 154.141 17.3655 154.228Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M81.5623 154.228H100.174C101.784 154.141 103.3 153.439 104.409 152.268C105.518 151.097 106.136 149.546 106.136 147.933C106.136 146.32 105.518 144.769 104.409 143.598C103.3 142.427 101.784 141.726 100.174 141.638H81.5623C79.952 141.726 78.4365 142.427 77.3275 143.598C76.2186 144.769 75.6006 146.32 75.6006 147.933C75.6006 149.546 76.2186 151.097 77.3275 152.268C78.4365 153.439 79.952 154.141 81.5623 154.228Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M49.7478 154.228H68.3593C69.9696 154.141 71.4851 153.439 72.594 152.268C73.7029 151.097 74.3209 149.546 74.3209 147.933C74.3209 146.32 73.7029 144.769 72.594 143.598C71.4851 142.427 69.9696 141.726 68.3593 141.638H49.7478C48.1375 141.726 46.622 142.427 45.5131 143.598C44.4042 144.769 43.7861 146.32 43.7861 147.933C43.7861 149.546 44.4042 151.097 45.5131 152.268C46.622 153.439 48.1375 154.141 49.7478 154.228Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M113.603 154.337H132.215C133.825 154.249 135.34 153.547 136.449 152.376C137.558 151.205 138.176 149.654 138.176 148.041C138.176 146.429 137.558 144.877 136.449 143.706C135.34 142.535 133.825 141.834 132.215 141.746H113.603C111.993 141.834 110.477 142.535 109.368 143.706C108.26 144.877 107.641 146.429 107.641 148.041C107.641 149.654 108.26 151.205 109.368 152.376C110.477 153.547 111.993 154.249 113.603 154.337Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4552 97.9783C27.8743 100.863 65.4621 100.863 69.6132 100.863C70.1816 100.863 71.3766 100.862 73.0428 100.853C75.0469 100.863 76.4792 100.863 77.1185 100.863C81.2696 100.863 118.837 100.801 129.256 97.9368C132.738 96.9993 135.912 95.164 138.462 92.6143C141.012 90.0645 142.847 86.8899 143.784 83.4081C146.649 72.7399 146.649 51.5695 146.649 50.6563C146.649 49.743 146.628 28.5727 143.784 17.9045C142.847 14.4226 141.012 11.248 138.462 8.69829C135.912 6.14858 132.738 4.31319 129.256 3.37578C118.837 0.490798 81.3318 0.490799 77.0978 0.490799C76.5305 0.490799 75.3652 0.492289 73.7473 0.50161C71.7104 0.490799 70.2501 0.490799 69.5924 0.490799C65.3583 0.490799 27.812 0.573819 17.4344 3.37578C13.9526 4.31319 10.778 6.14858 8.22824 8.69829C5.67853 11.248 3.84315 14.4226 2.90573 17.9045C0.0415061 28.5727 0.0415039 49.7638 0.0415039 50.6563C0.0415039 51.5487 0.0830171 72.7399 2.92649 83.4496C3.8639 86.9314 5.69929 90.1061 8.249 92.6558C10.7987 95.2055 13.9733 97.0409 17.4552 97.9783ZM71.9483 8.75643C58.3893 8.87956 34.0355 9.4809 27.1191 11.3458C25.0438 11.9111 23.1536 13.0122 21.6382 14.5385C20.1227 16.0649 19.0353 17.9629 18.4849 20.0423C15.8905 29.6727 15.849 50.4487 15.849 50.6563C15.849 50.8638 15.849 71.6398 18.4434 81.2703C18.9938 83.3496 20.0812 85.2476 21.5967 86.774C23.1121 88.3004 25.0023 89.4015 27.0776 89.9667C34.2821 91.8527 60.4238 92.4705 73.5474 92.5676C86.8117 92.4793 112.468 91.9435 119.592 89.9667C121.667 89.4015 123.557 88.3004 125.073 86.774C126.588 85.2476 127.676 83.3496 128.226 81.2703C130.779 71.6398 130.8 50.8638 130.8 50.6563C130.8 50.4487 130.8 29.6727 128.205 20.0423C127.655 17.9629 126.567 16.0649 125.052 14.5385C123.537 13.0122 121.646 11.9111 119.571 11.3458C112.161 9.28419 84.5937 8.80818 71.9483 8.75643Z" fill="var(--primary-glitch-color)" class="glitch-primary">
+                        </path>
+                        <path d="M122.38 167.41C123.99 167.497 125.506 168.199 126.615 169.37C127.724 170.541 128.342 172.092 128.342 173.705C128.342 175.318 127.724 176.869 126.615 178.04C125.506 179.211 123.99 179.912 122.38 180H51.3303C49.72 179.912 48.2045 179.211 47.0956 178.04C45.9867 176.869 45.3687 175.318 45.3687 173.705C45.3687 172.092 45.9867 170.541 47.0956 169.37C48.2045 168.199 49.72 167.497 51.3303 167.41H122.38Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M44.7328 118.914C46.3431 119.001 47.8586 119.703 48.9675 120.874C50.0765 122.045 50.6945 123.596 50.6945 125.209C50.6945 126.821 50.0765 128.373 48.9675 129.544C47.8586 130.715 46.3431 131.416 44.7328 131.504H33.6268C32.0165 131.416 30.501 130.715 29.3921 129.544C28.2832 128.373 27.6652 126.821 27.6652 125.209C27.6652 123.596 28.2832 122.045 29.3921 120.874C30.501 119.703 32.0165 119.001 33.6268 118.914H44.7328Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M108.929 118.914C110.54 119.001 112.055 119.703 113.164 120.874C114.273 122.045 114.891 123.596 114.891 125.209C114.891 126.821 114.273 128.373 113.164 129.544C112.055 130.715 110.54 131.416 108.929 131.504H97.8235C96.2132 131.416 94.6977 130.715 93.5888 129.544C92.4798 128.373 91.8618 126.821 91.8618 125.209C91.8618 123.596 92.4798 122.045 93.5888 120.874C94.6977 119.703 96.2132 119.001 97.8235 118.914H108.929Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M77.115 118.914C78.7253 119.001 80.2408 119.703 81.3497 120.874C82.4587 122.045 83.0767 123.596 83.0767 125.209C83.0767 126.821 82.4587 128.373 81.3497 129.544C80.2408 130.715 78.7253 131.416 77.115 131.504H66.009C64.3987 131.416 62.8832 130.715 61.7743 129.544C60.6654 128.373 60.0474 126.821 60.0474 125.209C60.0474 123.596 60.6654 122.045 61.7743 120.874C62.8832 119.703 64.3987 119.001 66.009 118.914H77.115Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M140.97 119.022C142.581 119.109 144.096 119.811 145.205 120.982C146.314 122.153 146.932 123.704 146.932 125.317C146.932 126.93 146.314 128.481 145.205 129.652C144.096 130.823 142.581 131.524 140.97 131.612H129.864C128.254 131.524 126.739 130.823 125.63 129.652C124.521 128.481 123.903 126.93 123.903 125.317C123.903 123.704 124.521 122.153 125.63 120.982C126.739 119.811 128.254 119.109 129.864 119.022H140.97Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M44.7327 141.638C46.343 141.726 47.8585 142.427 48.9674 143.598C50.0763 144.769 50.6944 146.32 50.6944 147.933C50.6944 149.546 50.0763 151.097 48.9674 152.268C47.8585 153.439 46.343 154.141 44.7327 154.228H33.6267C32.0164 154.141 30.5009 153.439 29.392 152.268C28.2831 151.097 27.665 149.546 27.665 147.933C27.665 146.32 28.2831 144.769 29.392 143.598C30.5009 142.427 32.0164 141.726 33.6267 141.638H44.7327Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M108.929 141.638C110.54 141.726 112.055 142.427 113.164 143.598C114.273 144.769 114.891 146.32 114.891 147.933C114.891 149.546 114.273 151.097 113.164 152.268C112.055 153.439 110.54 154.141 108.929 154.228H97.8235C96.2132 154.141 94.6977 153.439 93.5888 152.268C92.4798 151.097 91.8618 149.546 91.8618 147.933C91.8618 146.32 92.4798 144.769 93.5888 143.598C94.6977 142.427 96.2132 141.726 97.8235 141.638H108.929Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M77.115 141.638C78.7253 141.726 80.2408 142.427 81.3497 143.598C82.4587 144.769 83.0767 146.32 83.0767 147.933C83.0767 149.546 82.4587 151.097 81.3497 152.268C80.2408 153.439 78.7253 154.141 77.115 154.228H66.009C64.3987 154.141 62.8832 153.439 61.7743 152.268C60.6654 151.097 60.0474 149.546 60.0474 147.933C60.0474 146.32 60.6654 144.769 61.7743 143.598C62.8832 142.427 64.3987 141.726 66.009 141.638H77.115Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M140.97 141.746C142.581 141.834 144.096 142.535 145.205 143.706C146.314 144.877 146.932 146.429 146.932 148.041C146.932 149.654 146.314 151.205 145.205 152.376C144.096 153.547 142.581 154.249 140.97 154.337H129.864C128.254 154.249 126.739 153.547 125.63 152.376C124.521 151.205 123.903 149.654 123.903 148.041C123.903 146.429 124.521 144.877 125.63 143.706C126.739 142.535 128.254 141.834 129.864 141.746H140.97Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M85.8525 100.116C81.8266 100.116 45.3717 100.116 35.2666 97.3119C31.8897 96.4008 28.8108 94.617 26.3379 92.139C23.8651 89.661 22.085 86.5757 21.1758 83.1918C18.4181 72.7832 18.3778 52.188 18.3778 51.3207C18.3778 50.4533 18.3778 29.8581 21.1557 19.4899C22.0649 16.106 23.8449 13.0206 26.3178 10.5426C28.7907 8.06463 31.8696 6.28086 35.2465 5.36981C45.3113 2.64665 81.7259 2.56596 85.8324 2.56596C89.9389 2.56596 126.313 2.56596 136.418 5.36981C139.795 6.28086 142.874 8.06463 145.347 10.5426C147.82 13.0206 149.6 16.106 150.509 19.4899C153.267 29.8581 153.287 50.4331 153.287 51.3207C153.287 52.2082 153.287 72.7832 150.509 83.1514C149.6 86.5353 147.82 89.6207 145.347 92.0987C142.874 94.5767 139.795 96.3605 136.418 97.2715C126.313 100.055 89.8785 100.116 85.8525 100.116Z" fill="var(--background-color)">
+                        </path>
+                        <path d="M92.0779 98.0404C88.4236 98.0404 55.3338 98.0404 46.1615 95.5945C43.0963 94.7998 40.3016 93.2437 38.057 91.0821C35.8124 88.9204 34.1967 86.2289 33.3714 83.277C30.8682 74.1972 30.8317 56.2312 30.8317 55.4745C30.8317 54.7179 30.8317 36.7519 33.3531 27.7073C34.1784 24.7554 35.7941 22.0639 38.0387 19.9022C40.2833 17.7406 43.078 16.1845 46.1432 15.3898C55.279 13.0142 88.3323 12.9439 92.0597 12.9439C95.7871 12.9439 128.804 12.9439 137.976 15.3898C141.041 16.1845 143.836 17.7406 146.081 19.9022C148.325 22.0639 149.941 24.7554 150.766 27.7073C153.269 36.7519 153.288 54.7003 153.288 55.4745C153.288 56.2488 153.288 74.1972 150.766 83.2418C149.941 86.1937 148.325 88.8852 146.081 91.0469C143.836 93.2085 141.041 94.7646 137.976 95.5593C128.804 97.9876 95.7323 98.0404 92.0779 98.0404Z" fill="var(--light-bg-color)">
+                        </path>
+                        <path d="M85.8745 100.863C81.7234 100.863 44.1357 100.863 33.7165 97.9783C30.2347 97.0409 27.0601 95.2055 24.5104 92.6558C21.9606 90.1061 20.1253 86.9315 19.1878 83.4496C16.3444 72.7399 16.3029 51.5488 16.3029 50.6563C16.3029 49.7638 16.3029 28.5727 19.1671 17.9045C20.1045 14.4226 21.9399 11.248 24.4896 8.69832C27.0393 6.14861 30.2139 4.31322 33.6958 3.37581C44.0734 0.573849 81.6197 0.490829 85.8538 0.490829C90.0878 0.490829 127.593 0.490828 138.012 3.37581C141.494 4.31322 144.668 6.14861 147.218 8.69832C149.768 11.248 151.603 14.4226 152.54 17.9045C155.384 28.5727 155.405 49.7431 155.405 50.6563C155.405 51.5695 155.405 72.7399 152.54 83.4081C151.603 86.89 149.768 90.0646 147.218 92.6143C144.668 95.164 141.494 96.9994 138.012 97.9368C127.593 100.801 90.0256 100.863 85.8745 100.863ZM85.8745 8.73066C74.6459 8.73066 43.8036 9.20804 35.8751 11.3458C33.7998 11.9111 31.9096 13.0122 30.3942 14.5386C28.8787 16.0649 27.7913 17.963 27.2409 20.0423C24.6465 29.6727 24.605 50.4487 24.605 50.6563C24.605 50.8639 24.605 71.6399 27.1994 81.2703C27.7497 83.3496 28.8372 85.2477 30.3526 86.774C31.8681 88.3004 33.7583 89.4015 35.8336 89.9668C43.7621 92.0423 74.6251 92.5819 85.833 92.5819C97.0408 92.5819 127.925 92.1668 135.853 89.9668C137.928 89.4015 139.819 88.3004 141.334 86.774C142.85 85.2477 143.937 83.3496 144.487 81.2703C147.04 71.6399 147.061 50.8639 147.061 50.6563C147.061 50.4487 147.061 29.6727 144.467 20.0423C143.916 17.963 142.829 16.0649 141.313 14.5386C139.798 13.0122 137.908 11.9111 135.832 11.3458C127.925 9.14577 97.0616 8.75142 85.8745 8.75142V8.73066Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M34.9839 53.7697C34.1654 53.7588 33.3842 53.426 32.8092 52.8433C32.2343 52.2606 31.912 51.475 31.9121 50.6564C31.9121 45.1148 32.348 29.1332 34.2575 21.9104C34.3624 21.5152 34.5441 21.1445 34.7923 20.8195C35.0405 20.4945 35.3503 20.2216 35.704 20.0164C36.0576 19.8111 36.4482 19.6775 36.8535 19.6232C37.2588 19.5689 37.6708 19.595 38.066 19.6999C38.4613 19.8049 38.8319 19.9866 39.1569 20.2348C39.4819 20.483 39.7548 20.7928 39.96 21.1465C40.1653 21.5001 40.2989 21.8907 40.3532 22.296C40.4075 22.7013 40.3814 23.1133 40.2765 23.5085C38.8029 29.0294 38.201 42.7072 38.201 50.6564C38.201 51.4821 37.8729 52.274 37.2891 52.8579C36.7052 53.4417 35.9134 53.7697 35.0877 53.7697H34.9839Z" fill="var(--text-color)">
+                        </path>
+                        <path d="M35.3984 63.5246C34.5727 63.5246 33.7809 63.1966 33.197 62.6128C32.6132 62.0289 32.2852 61.237 32.2852 60.4113C32.2852 59.5856 32.6132 58.7938 33.197 58.2099C33.7809 57.6261 34.5727 57.298 35.3984 57.298C36.2241 57.298 37.016 57.6261 37.5999 58.2099C38.1837 58.7938 38.5117 59.5856 38.5117 60.4113C38.5117 61.237 38.1837 62.0289 37.5999 62.6128C37.016 63.1966 36.2241 63.5246 35.3984 63.5246Z" fill="var(--text-color)">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom:96px">
+            </div>
+            <div class="boxed m-auto col center" style="max-height:calc(100vh - 580px);line-height:2em;overflow:auto">
+              <a href="https://samiroy.com" style="text-decoration:none">samiroy.com</a>
+              <a href="https://poonji.io" style="text-decoration:none">poonji.io</a>
+              <a href="https://github.com" style="text-decoration:none">github.com</a>
+              <a href="https://amazon.in" style="text-decoration:none">amazon.in</a>
+              <a href="https://youtube.com" style="text-decoration:none">youtube.com</a>
+              <a href="https://news.ycombinator.com" style="text-decoration:none">hacker.news</a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
